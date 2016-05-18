@@ -31,7 +31,7 @@ webpack官方文档
 >
 > Windows下未经测试，npm install 部分包可能会因缺少组件而报错。比如sass需要自行安装phyton2.7，c++
 
---- 提示信息
+### 提示信息
 
 *  npm init 初始化一个项目，自动创建package.json文件，中间会有一些提示信息需要确认，默认回车就行。[文档](https://docs.npmjs.com/files/package.json)
 *  --save 或 --save-dev 用来把install的包名保存在package.json文件中，以后只要npm install 就可以了。
@@ -56,8 +56,8 @@ $ npm run start
 
 * [lesson1](/lesson1/lesson1.md)
 * [lesson2](/lesson2/lesson2.md)
-* [lesson3](/lesson2/lesson3.md)
-* [lesson4](/lesson2/lesson4.md)
+* [lesson3](/lesson3/lesson3.md)
+* [lesson4](/lesson4/lesson4.md)
 
 ### 参考
 
