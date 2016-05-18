@@ -13,7 +13,7 @@ class Activity extends Component{
                 <header onClick={this.clickHandle.bind(this)}>
                     <span className="title">关于我们</span>
                 </header>
-                <p>所售商品涵盖母婴用品、美容彩妆、营养保健、家居个护、国际轻奢等多个品类,消费者可直接在海外
+                <p>涵盖母婴用品、美容彩妆、营养保健、家居个护、国际轻奢等多个品类,消费者可直接在海外
                 购上买到来自英国、美国、德国、荷兰、日本等22个国家和地区的海外正品。</p>
                 <div className="m-entry">
                     <span><i></i>海外直采</span>

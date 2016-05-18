@@ -16,8 +16,9 @@
 	$ npm install
 	$ npm run start
 ```
-    访问www/index.html就可以看到打包后的效果，打包输出的文件在www/js目录下
-
+    访问http://127.0.0.1:4000/build/
+    或者http://127.0.0.1:4000/www/
+    然后改变一下样式，是不是发现实时生效了呢
 
 ## 小结
 	本章演示了如何使用webpack 把采用es6和jsx 语法编写的源码转换成浏览器可以运行的普通js，
