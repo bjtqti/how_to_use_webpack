@@ -37,7 +37,7 @@ $ npm run start
 ### 文档目录
 
 * [lesson1](/lesson1/getting-started.md)
-
+# [lesson2](/lesson2/sample-start.md)
 
 ### 参考
 
