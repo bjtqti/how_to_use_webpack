@@ -5,7 +5,7 @@ webpack官方文档
 	
 	从零开始，一步一步地介绍webpack的使用，最终实现利用webpack构建一个自动化的打包方案
 
-## 安装
+### 安装
 ```sh
 	cd lesson1
 	$ npm install
@@ -20,6 +20,7 @@ webpack官方文档
 >
 > Windows下未经测试，npm install 部分包可能会因缺少组件而报错。比如sass需要自行安装phyton2.7，c++
 >
+
 ### 如何更新npm 版本
 ```sh
 $ npm install npm 
@@ -33,14 +34,12 @@ $ npm install npm
 ```sh
 $ npm run start
 ```
-# 文档目录
+### 文档目录
 
-## lesson1
-
-* [快速开始](/lesson1/getting-started.md)
+* [lesson1](/lesson1/getting-started.md)
 
 
-## 参考
+### 参考
 
 * [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
 * [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
@@ -49,6 +48,6 @@ $ npm run start
 * [WEBPACK 入门](http://www.jianshu.com/p/cc1e6f2d6380)
 * [使用 Babel + React + Webpack 搭建 Web 应用](http://www.tuicool.com/articles/yU73qay)
 
-## Blog
+### Blog
 
 * [我的博客](http://www.cnblogs.com/afrog)
