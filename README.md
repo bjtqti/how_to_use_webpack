@@ -54,10 +54,11 @@ $ npm run start
 ```
 ### 文档目录
 
-* [lesson1](/lesson1/lesson1.md)
-* [lesson2](/lesson2/lesson2.md)
-* [lesson3](/lesson3/lesson3.md)
-* [lesson4](/lesson4/lesson4.md)
+* [lesson1](/lesson1)
+* [lesson2](/lesson2)
+* [lesson3](/lesson3)
+* [lesson4](/lesson4)
+* [lesson5](/lesson5)
 
 ### 参考
 
