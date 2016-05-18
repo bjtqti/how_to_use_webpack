@@ -5,11 +5,22 @@ webpack官方文档
 	
 	从零开始，一步一步地介绍webpack的使用，最终实现利用webpack构建一个自动化的打包方案
 
-### 安装
+### 自动安装
+
 ```sh
 	cd lesson1
 	$ npm install
 ```
+### 手动安装
+
+```sh
+	$ mkdir webapp
+	$ npm init
+	$ npm install webpack babel-core babel-loader babel-preset-es2015 --save-dev
+	$ npm install react react-dom --save
+	$ touch webpack.config.js
+``` 
+
 ### 依赖
 	
 	需要安装nodejs 4.4.4+ 版本
@@ -19,12 +30,19 @@ webpack官方文档
 > 注意:
 >
 > Windows下未经测试，npm install 部分包可能会因缺少组件而报错。比如sass需要自行安装phyton2.7，c++
->
 
-### 如何更新npm 版本
-```sh
-$ npm install npm 
-```
+--- 提示信息
+
+*  npm init 初始化一个项目，自动创建package.json文件，中间会有一些提示信息需要确认，默认回车就行。[文档](https://docs.npmjs.com/files/package.json)
+*  --save 或 --save-dev 用来把install的包名保存在package.json文件中，以后只要npm install 就可以了。
+   --save 和 --save-dev 是有区别的，从它们在package.json文件中的位置就大概可以猜出来了。简单来说，如果只是用来辅助打包用的包，就用--save-dev
+   否则就用--save
+*  webpack.config.js 文件是webpack的默认配置文件，放在项目的根目录，也就是与package.json同级。当然，这个路径和名字，也是可以更改的，不过需要
+	用webpack --config xxx 的方式进行指定，后面章节会有示例，这一章了解一下就好。
+*  npm 安装有些包会很慢，可以参考淘宝的npm镜像 [淘宝加速](https://npm.taobao.org/)
+*  最后打开package.json文件，在scripts：后面加上"start":"webpack",这样就可以用npm run start 方式启动打包过程了。start这是任务的名字，可以
+	用自己喜欢的，比如build,release等等，但是后面的webpack则是固定用法。更多用法参考[npm-scripts](https://docs.npmjs.com/misc/scripts)
+
 
 ### 启动
 
@@ -36,8 +54,10 @@ $ npm run start
 ```
 ### 文档目录
 
-* [lesson1](/lesson1/getting-started.md)
-# [lesson2](/lesson2/sample-start.md)
+* [lesson1](/lesson1/lesson1.md)
+* [lesson2](/lesson2/lesson2.md)
+* [lesson3](/lesson2/lesson3.md)
+* [lesson4](/lesson2/lesson4.md)
 
 ### 参考
 

@@ -5,7 +5,7 @@
 	
 ```sh
 	git clone https://github.com/bjtqti/how_to_use_webpack.git
-	cd lesson2
+	cd lesson1
 	$ npm install
 	$ npm run start
 ```
