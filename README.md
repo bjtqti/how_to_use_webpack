@@ -44,9 +44,10 @@ $ npm run start
 * [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
 * [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
     - [解读Webpack官方文档](https://segmentfault.com/a/1190000003506497)
+    - [npm-命令概述](http://realwall.cn/blog/?p=120)
 * [WEBPACK 入门](http://www.jianshu.com/p/cc1e6f2d6380)
 * [使用 Babel + React + Webpack 搭建 Web 应用](http://www.tuicool.com/articles/yU73qay)
 
 ## Blog
 
-* [cnblogs](http://www.cnblogs.com/afrog)
+* [我的博客](http://www.cnblogs.com/afrog)
