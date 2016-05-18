@@ -18,8 +18,9 @@ webpack官方文档
 
 > 注意:
 >
-> Windows下未经测试，可能会因为缺少编译环境或系统权限而报错
-> 更新npm 版本
+> Windows下未经测试，npm install 部分包可能会因缺少组件而报错。比如sass需要自行安装phyton2.7，c++
+>
+### 如何更新npm 版本
 ```sh
 $ npm install npm 
 ```
@@ -44,7 +45,7 @@ $ npm run start
 * [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
 * [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
     - [解读Webpack官方文档](https://segmentfault.com/a/1190000003506497)
-    - [npm-命令概述](http://realwall.cn/blog/?p=120)
+    - [npm-scripts](http://blog.csdn.net/ricohzhanglong/article/details/50726256)
 * [WEBPACK 入门](http://www.jianshu.com/p/cc1e6f2d6380)
 * [使用 Babel + React + Webpack 搭建 Web 应用](http://www.tuicool.com/articles/yU73qay)
 

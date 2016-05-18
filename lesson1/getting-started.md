@@ -29,7 +29,7 @@
 	$ npm install react react-dom --save
 	$ touch webpack.config.js
 ``` 
-*  npm init 初始化一个项目，自动创建package.json文件，中间会有一些提示信息需要确认，默认回车就行。
+*  npm init 初始化一个项目，自动创建package.json文件，中间会有一些提示信息需要确认，默认回车就行。[文档](https://docs.npmjs.com/files/package.json)
 *  --save 或 --save-dev 用来把install的包名保存在package.json文件中，以后只要npm install 就可以了。
    --save 和 --save-dev 是有区别的，从它们在package.json文件中的位置就大概可以猜出来了。简单来说，如果只是用来辅助打包用的包，就用--save-dev
    否则就用--save
