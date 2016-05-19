@@ -12,14 +12,11 @@
 	
 ```sh
 	git clone https://github.com/bjtqti/how_to_use_webpack.git
-	cd lesson5
+	cd lesson6
 	$ npm install
-	$ npm run dev
+	$ npm run start
 ```
-    访问http://127.0.0.1:4000/build/
-    或者http://127.0.0.1:4000/www/
-    然后改变一下样式，是不是发现实时生效了呢
+	注意观察build/css 和 build/js 下面文件的变化
 
 ## 小结
-	本章演示了如何使用webpack 把采用es6和jsx 语法编写的源码转换成浏览器可以运行的普通js，
-	这很有趣，不是吗？
+	本章演示了在生产环境如何打包并输出压缩后的js和css

@@ -54,11 +54,12 @@ $ npm run start
 ```
 ### 文档目录
 
-* [lesson1](/lesson1)
-* [lesson2](/lesson2)
-* [lesson3](/lesson3)
-* [lesson4](/lesson4)
-* [lesson5](/lesson5)
+* [打包js](/lesson1)
+* [打包css](/lesson2)
+* [打包css到文件](/lesson3)
+* [打包jsx和es6文件](/lesson4)
+* [演示热替换](/lesson5)
+* [打包成压缩文件](/lesson6)
 
 ### 参考
 
