@@ -1,0 +1,19 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	lineSet();
+});
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".helpList dl,.pop_btn").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}

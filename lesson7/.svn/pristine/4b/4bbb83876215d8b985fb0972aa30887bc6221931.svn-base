@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>搜索结果页</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/search.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f7f7f7">
+<div id="load-box"></div>
+
+<div class="box searchResult">
+    <!-- 没有优惠券 -->
+    <div class="empty noPadTop">
+    	<!--header-->
+        <header>
+            <span class="title">奶粉</span>
+            
+            <a href="javascript:void(0);" class="backArrow"></a>
+        </header>
+        <img src="images/empty_search.png" />
+        <span>抱歉，没有找到与“<em>dfc</em>”相关的商品，您可以换个词再试试~！</span>
+    </div>
+    
+    <!-- 有优惠券 -->
+    <div class="search" style="display:none;">
+    
+        <div class="home-page rollOut-animate">
+            <div class="mask fadeIn"></div>
+            <!--header-->
+            <header>
+                <!--<span class="title">奶粉</span>-->
+                
+                <div class="search-box">
+                    <input id="search-box" type="search" oninput="OnInput (event)" value="奶粉">
+                    <span></span>
+                    <div class="reset"><i class="iconfont icon-closefill"></i></div>
+                </div>
+                
+                <a href="javascript:void(0);" class="backArrow"></a>
+                <a class="screening" href="javascript:void(0);">筛选</a>
+            </header>
+            
+            <div class="search_order">
+                <a href="javascript:void(0);" class="moren active">
+                    <i></i>
+                    默认
+                </a>
+                <a href="javascript:void(0);" class="jiage">
+                    <i></i>
+                    价格
+                </a>
+                <a href="javascript:void(0);" class="xiaoliang">
+                    <i></i>
+                    销量
+                </a>
+            </div>
+            <div class="specialActivity_list clearfix">
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <div class="soldOut"></div><!-- 已抢光 -->
+                        <div class="jpsg"></div><!-- 精品闪购图标 -->
+                        <img src="images/pic17.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <div class="soldOut"></div><!-- 已抢光 -->
+                        <div class="jpsg"></div><!-- 精品闪购图标 -->
+                        <img src="images/pic18.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <img src="images/pic19.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <img src="images/pic17.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <img src="images/pic18.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+                <a href="#" title="">
+                    <div class="clearfix">
+                        <img src="images/pic19.gif" alt="">
+                        <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰直采</span>
+                        <p>荷兰原装Hero baby【免税店】奶粉1段（0-6个月）...</p>
+                        <span class="singlePrice">
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="menu-slider rollIn-animate">
+            <header>
+                <!--<a href="javascript:void(0);" class="backArrow"></a>-->
+                <a href="javascript:void(0)" class="resetLink">重置</a>
+                <a class="screening" href="javascript:void(0);">确定</a>
+            </header>
+            
+            <div class="showHave">
+                <dl>
+                    <dt>只显示有货</dt>
+                    <dd><i></i></dd>
+                </dl>
+            </div>
+            
+            <div class="helpList">
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>类别</dt>
+                        <dd class="iconfont icon-right"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>品牌</dt>
+                        <dd class="iconfont icon-right"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>产地</dt>
+                        <dd class="iconfont icon-right"></dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        
+        <div class="second-slider rollIn-animate">
+            <header>
+                <a href="javascript:void(0);" class="backArrow"></a>
+                <a class="screening" href="javascript:void(0);">确定</a>
+            </header>
+            <div class="helpList">
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>婴儿奶粉</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>宝宝尿裤</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>营养辅食</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>宝宝洗护</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>喂哺餐具</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="helpList">
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>基础护肤</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+                <a href="javascript:void(0);">
+                    <dl>
+                        <dt>清新面膜</dt>
+                        <dd class="iconfont"></dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>

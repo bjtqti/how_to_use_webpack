@@ -1,0 +1,50 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	navSet();
+	lineSet();
+});
+
+/* 移动幻灯事件 */
+TouchSlide({ 
+	slideCell:"#focus",
+	titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+	mainCell:".bd ul", 
+	effect:"leftLoop", 
+	autoPlay:true,//自动播放
+	autoPage:true //自动分页
+});
+
+/* 导航设置 */
+function navSet() {
+    var liSum = 0;
+    var navLi = $(".topNav li");
+    var windowW = $(window).width();
+    liSum = (windowW/4.5) * navLi.length;
+    if(liSum > windowW){
+        $(".topNav ul").css({
+            "width": liSum + "px"
+        });
+        $(".topNav li").css({
+            "width": (100 / navLi.length) + "%"
+        });
+    }else{
+        $(".topNav li").css({
+            "width": (100 / navLi.length) + "%"
+        });
+    }
+}
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".bottomNav").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}

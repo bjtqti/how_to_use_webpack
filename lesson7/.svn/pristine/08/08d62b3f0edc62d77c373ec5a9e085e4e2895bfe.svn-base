@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>收货地址</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/adress.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#ededed">
+<div id="load-box"></div>
+<div class="box box-pb">
+	<!--header-->
+  	<header> <span class="title">收货地址</span> <a href="javascript:void(0);" class="backArrow"></a> </header>
+    
+    <!-- 有收货地址 -->
+    <div class="orderConfirm selectArea">
+ 
+       	 <div class="order-time">
+            <p>李某某<span class="mobNum">18692837719</span><i>【默认】</i></p>
+            <p>433101**********1011<em>实名</em></p>
+            <p>湖南省长沙市芙蓉区五一大道158号27楼五一大道158号27楼</p>
+            <div class="toolsArea">
+            	<span class="pen"><em></em>修改</span>
+                <span class="del"><em></em>删除</span>
+            </div>
+        </div>
+        
+        <div class="order-time">
+            <p>李某某<span class="mobNum">18692837719</span></p>
+            <p>433101**********1011<em>实名</em></p>
+            <p>湖南省长沙市芙蓉区五一大道158号27楼五一大道158号27楼</p>
+            <div class="toolsArea">
+            	<em>设为默认地址</em>
+            	<span class="pen"><em></em>修改</span>
+                <span class="del"><em></em>删除</span>
+            </div>
+        </div>
+        
+        <div class="addBtns">
+            <a href="javascript:void(0);" class="addBtn">添加新地址</a>
+        </div>
+        
+	</div>
+    
+    <!-- 有收货地址 -->
+    <div class="empty" style="display:none;">
+        <img src="images/empty_address.png" />
+        <span>快来添加您的收货地址吧！</span>
+        <a href="#" class="empty_btn">添加新地址</a>
+    </div>
+    
+</div>
+<script type="text/javascript" src="js/adress.js"></script>
+</body>
+</html>

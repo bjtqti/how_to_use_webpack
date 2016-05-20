@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	padding-bottom:52px;
+}
+
+.polyCon{
+	width: 100%;
+	overflow-x: hidden;
+}
+.polyCon #page-content{
+}
+.polyCon #page-content > div{
+	position:absolute;
+	width:100%;
+	padding-bottom:1.38rem;
+}
+/* 类别 */
+.polyTabs {
+	height: 1.16rem;
+	border-bottom: 1px solid #d7d7d7;
+	background-color:#fff;
+	position:relative;
+	z-index:2;
+}
+.polyTabs ul {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+	width: 100%;
+	height: 1.16rem;
+}
+.polyTabs ul li {
+	-webkit-appearance: none;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	display: block;
+	line-height: 1.16rem;
+	text-align: center;
+}
+.polyTabs ul li.current {
+}
+.polyTabs ul li.current i{
+	color: #801da1;
+    border-bottom:.053333rem solid #801da1;
+}

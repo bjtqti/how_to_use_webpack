@@ -1,0 +1,43 @@
+.box {
+    background-color: #ededed;
+}
+.account {
+    overflow: hidden;
+}
+
+.list {
+    margin-top:.3rem;
+    background-color: white;
+}
+
+dl {
+    position: relative;
+    border-top: 1px solid #d7d7d7;
+    line-height: 1.18rem;
+}
+
+dt {
+    text-indent: .28rem;
+}
+
+dd {
+    width: .5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+dl.head {
+    height: 2.75rem;
+    line-height: 2.75rem;
+    border: none;
+}
+
+dd.icon {
+    right: 1rem;
+    width: 2rem;
+}
+
+dd.icon > img {
+    width: 100%;
+}

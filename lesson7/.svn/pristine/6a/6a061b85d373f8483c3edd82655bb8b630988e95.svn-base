@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>全部品牌</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/catePoly.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">全部品牌</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+
+    <div class="brand_all">
+    	
+    	
+        <ul class="tt fadeIn">
+			
+        </ul>
+        
+        <div id="con">
+            <div class="brand_all_letter">
+                <span>A</span>
+                <a href="#">AAAAAA</a>
+                <a href="#">AAAAAAA</a>
+                <a href="#">AAAAA</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>B</span>
+                <a href="#">BBBBBB</a>
+                <a href="#">BBBBBBB</a>
+                <a href="#">BBBBB</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>C</span>
+                <a href="#">CCCCCC</a>
+                <a href="#">CCCCCCC</a>
+                <a href="#">CCCCC</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>D</span>
+                <a href="#">DDDDD</a>
+                <a href="#">DDDDDD</a>
+                <a href="#">DDDDDDD</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>E</span>
+                <a href="#">E</a>
+                <a href="#">EEE</a>
+                <a href="#">EE</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>F</span>
+                <a href="#">F</a>
+                <a href="#">FFF</a>
+                <a href="#">FF</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>G</span>
+                <a href="#">G</a>
+                <a href="#">GGG</a>
+                <a href="#">GG</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>H</span>
+                <a href="#">H</a>
+                <a href="#">HHH</a>
+                <a href="#">HH</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>I</span>
+                <a href="#">I</a>
+                <a href="#">III</a>
+                <a href="#">II</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>J</span>
+                <a href="#">J</a>
+                <a href="#">JJJ</a>
+                <a href="#">JJ</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>K</span>
+                <a href="#">K</a>
+                <a href="#">KKK</a>
+                <a href="#">KK</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>L</span>
+                <a href="#">L</a>
+                <a href="#">LLL</a>
+                <a href="#">LLLL</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>M</span>
+                <a href="#">M</a>
+                <a href="#">MMM</a>
+                <a href="#">MM</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>N</span>
+                <a href="#">N</a>
+                <a href="#">NNN</a>
+                <a href="#">NN</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>O</span>
+                <a href="#">O</a>
+                <a href="#">OOO</a>
+                <a href="#">OO</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>P</span>
+                <a href="#">P</a>
+                <a href="#">PPP</a>
+                <a href="#">PP</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>Q</span>
+                <a href="#">Q</a>
+                <a href="#">QQQ</a>
+                <a href="#">QQ</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>R</span>
+                <a href="#">R</a>
+                <a href="#">RRR</a>
+                <a href="#">RR</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>S</span>
+                <a href="#">S</a>
+                <a href="#">SSS</a>
+                <a href="#">SS</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>T</span>
+                <a href="#">T</a>
+                <a href="#">TTT</a>
+                <a href="#">TT</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>U</span>
+                <a href="#">U</a>
+                <a href="#">UUU</a>
+                <a href="#">UU</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>V</span>
+                <a href="#">V</a>
+                <a href="#">VVV</a>
+                <a href="#">VV</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>W</span>
+                <a href="#">W</a>
+                <a href="#">WWW</a>
+                <a href="#">WW</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>X</span>
+                <a href="#">XXX</a>
+                <a href="#">XX</a>
+                <a href="#">XXXX</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>Y</span>
+                <a href="#">YY</a>
+                <a href="#">YYYY</a>
+                <a href="#">YYY</a>
+            </div>
+            <div class="brand_all_letter">
+            	<span>Z</span>
+                <a href="#">Z</a>
+                <a href="#">ZZZ</a>
+                <a href="#">ZZ</a>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/catePoly.js"></script>
+</body>
+</html>

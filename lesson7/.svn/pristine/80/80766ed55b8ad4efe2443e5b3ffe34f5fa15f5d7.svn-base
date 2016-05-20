@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>用户中心</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/user.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f5f5f5">
+<div id="load-box"></div>
+<div class="box box-pb">
+	
+    <div class="user">
+    	<header>
+        	<div class="top">
+                <span>个人中心</span>
+                <a href="#"><i class="iconfont icon-setting"></i></a>
+            </div>
+            
+            <!-- 未登录 -->
+            <div class="userBtns" style="display:none;">
+            	<a href="login.html">注&nbsp;册</a>
+                <a href="reg.html">登&nbsp;录</a>
+            </div>
+            <!-- 已登录 -->
+            <div class="userInfo">
+            	<div class="userInfo_con">
+                    <img src="images/userPic.gif" />
+                    <a href="javascript:void(0);" class="user_qr"><img src="images/user_qr.png" /></a>
+                </div>
+                <span>15845213695</span>
+            </div>
+            
+            <div class="userGoods">
+            	<a href="#" class="userGoods_1">
+                	<em></em>
+                	<span>待付款</span>
+                    <i>9</i>
+                </a>
+                <a href="#" class="userGoods_2">
+                	<em></em>
+                	<span>待发货</span>
+                    <i>99+</i>
+                </a>
+                <a href="#" class="userGoods_3">
+                	<em></em>
+                	<span>待收货</span>
+                    <i>99+</i>
+                </a>
+                <a href="#" class="userGoods_4">
+                	<em></em>
+                	<span>待评价</span>
+                    <i>99+</i>
+                </a>
+            </div>
+        </header>
+        
+        <div class="helpList">
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_1.png" />
+                    	全部订单
+                    </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        
+        <div class="helpList">
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_2.png" />
+                    	收货地址
+                        <em class="dot"></em>
+                  </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_3.png" />
+                    	我的收藏
+                        <em class="dot"></em>
+                  </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_4.png" />
+                    	我的评论
+                    	<em class="dot"></em>
+                  </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_5.png" />
+                    	优惠券
+                        <em class="dot"></em>
+                  </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_6.png" />
+                    	账户设置
+                    </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        
+        <div class="helpList">
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_7.png" />
+                    	关于我们
+                        <em class="dot"></em>
+                  </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        
+        <div class="helpList">
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>
+                    	<img src="images/user_icon_8.png" />
+                    	帮助反馈
+                    </dt>
+                    <dd>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+        
+    </div>
+    
+    <div class="qrShow">
+    	<div class="mask"></div>
+        <div class="con">
+        	<div class="head"><span class="text">扫码分享</span><a class="close" href="javascript:"></a></div>
+            <div class="qrShow_con">
+            	<div class="qr_pic">
+                	<!-- 二维码 -->
+                    <img src="images/qr.png" />
+                </div>
+            	<div class="desc">邀请小伙伴扫一扫分享给TA</div>
+            </div>
+        </div>
+    </div>
+    
+    <!--bottomNav-->
+    <nav class="bottomNav">
+        <ul class="clearfix">
+            <li><a href="#"><i></i>海外购</a></li>
+            <li><a href="#"><i></i>分类</a></li>
+            <li><a href="#"><i></i>爆款</a></li>
+            <li><a href="#"><i></i>购物车</a></li>
+            <li><a href="#" class="nav_hover"><i></i>个人中心</a></li>
+        </ul>
+    </nav>
+</div>
+<script type="text/javascript" src="js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>账户设置-基本信息</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/account.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f7f7f7">
+<div id="load-box"></div>
+<div class="box box-pb">
+
+	<!--header-->
+    <header>
+        <span class="title">基本信息</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+        <a class="screening" href="javascript:void(0);">保存</a>
+    </header>
+    
+    <div class="account">
+    	<div class="basicInfo">
+           
+
+                <div>
+                    <em>昵称</em>
+                    <input type="text" placeholder="请输入昵称">
+                </div>
+				<p>昵称允许输入2-20位字符，支持中英文、数字及“-”“_”“@”组合。</p>
+                <div class="sex">
+                    <em>性别</em>
+                    <select>
+                    	<option>请选择</option>
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </div>
+
+                <div class="birth">
+                    <em>生日</em>
+                    <select>
+                    	<option>请选择</option>
+                    </select>
+                    <span>年</span>
+                    <select>
+                    	<option>请选择</option>
+                    </select>
+                    <span>月</span>
+                    <select>
+                    	<option>请选择</option>
+                    </select>
+                    <span>日</span>
+                </div>
+                <p>填生日有惊喜哦！</p>
+
+
+        </div>
+
+    </div>
+    
+</div>
+<script type="text/javascript" src="js/account.js"></script>
+</body>
+</html>

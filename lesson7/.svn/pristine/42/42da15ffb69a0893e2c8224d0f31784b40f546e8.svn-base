@@ -1,0 +1,105 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	lineSet();
+	commentSet();
+	ifScore();
+});
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".comList_title,.comPics img,.commentTabs,.comList .myList,.myList > img,.commentBaby .J_moveRight .img_wrap,.comment_area_pic a,.confirmBtns").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}
+
+/* 切换 */
+var isAnimating = false;
+function commentSet(){
+
+	$(".commentTabs ul li").on("tap",function(){
+		
+		var frontIndex = $(".commentTabs ul li.current").index();
+		var thisIndex = $(this).index();
+		
+		if(isAnimating || thisIndex == frontIndex){
+			return;
+		}
+		
+		$(".commentTabs ul li").removeClass("current");
+		$(".commentTabs ul li").eq($(this).index()).addClass("current");
+		
+		pageSwitch(frontIndex,thisIndex);
+	});
+}
+
+/* 商品评论-评分 */
+function score(){
+	var score = new Score({});
+}
+
+/* 仅在商品评论宝贝时可星级评分 */
+function ifScore(){
+	if($("body").hasClass("score")){
+		score();
+	}
+}
+
+//阻止事件冒泡函数
+function stopBubble(e){
+    if (e && e.stopPropagation)
+        e.stopPropagation();
+    else
+        window.event.cancelBubble=true;
+};
+
+function pageSwitch(nowP,activeP){
+	
+	var direction;
+
+	if (nowP < activeP) { 
+		direction = 0;
+	}else{
+		direction = 1;
+	};
+
+	var pageIndex = nowP;
+	var lastPage = ".page-"+activeP;
+
+	var nowPage = ".page-"+pageIndex;
+
+	switch(direction) {
+		case 0:
+			outClass = 'pt-page-moveToLeft';
+			inClass = 'pt-page-moveFromRight';
+			break;
+		case 1:
+			outClass = 'pt-page-moveToRight';
+			inClass = 'pt-page-moveFromLeft';
+			break;
+	}
+	isAnimating = true;
+	$(lastPage).removeClass("hide");
+	
+	$(nowPage).addClass(outClass);
+	$(lastPage).addClass(inClass);
+	
+	setTimeout(function(){		
+		$(nowPage).removeClass('page-current');
+		$(nowPage).removeClass(outClass);
+		$(nowPage).addClass("hide");
+		
+		$(lastPage).addClass('page-current');
+		$(lastPage).removeClass(inClass);
+
+		isAnimating = false;
+	},600);
+
+}

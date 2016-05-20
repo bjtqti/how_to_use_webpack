@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>在线客服</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/about.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f1f1f1">
+
+	<div id="load-box"></div>
+
+	<!--header-->
+    <header>
+        <span class="title">在线客服</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="customLine">
+    	<div class="timeCut">
+        	<div class="timeShow">
+        		<span>2015-04-03 17:30 </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	我原来不知道
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk staff">
+            	<em>客服</em>
+                <span>
+                	其实你知道，亲~
+                    <div class="arrow-left">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	我原来不知道我原来不知道我原来不知道我原来不知道我原来不
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk staff">
+            	<em>客服</em>
+                <span>
+                	其实你知道，亲~其实你知道，亲~其实你知道，亲~
+                    <div class="arrow-left">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            
+        </div>
+        
+        <div class="timeCut">
+        	<div class="timeShow">
+        		<span>2015-04-03 17:30 </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	在吗？
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+        <div class="timeCut">
+        	<div class="timeShow">
+        		<span>2015-04-03 17:30 </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	我原来不知道
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk staff">
+            	<em>客服</em>
+                <span>
+                	其实你知道，亲~
+                    <div class="arrow-left">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	我原来不知道我原来不知道我原来不知道我原来不知道我原来不
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            <div class="talk staff">
+            	<em>客服</em>
+                <span>
+                	其实你知道，亲~其实你知道，亲~其实你知道，亲~
+                    <div class="arrow-left">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+            
+        </div>
+        
+        <div class="timeCut">
+        	<div class="timeShow">
+        		<span>2015-04-03 17:30 </span>
+            </div>
+            <div class="talk user">
+            	<em>我</em>
+                <span>
+                	在吗？
+                    <div class="arrow-right">
+                        <!--向右的三角-->
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="customBox">
+    	<span class="iconfont icon-plus"></span>
+        <input type="text" placeholder="说点什么..." />
+        <a class="send" href="javascript:void(0);">发送</a>
+    </div>
+    
+<script type="text/javascript" src="js/about.js"></script>    
+</body>
+</html>

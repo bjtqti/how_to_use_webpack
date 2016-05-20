@@ -1,0 +1,15 @@
+// JavaScript Document
+
+window.onload = function(){
+	document.getElementById("load-box").style.display = "none";
+}
+
+$(document).ready(function(){
+    popSet();
+});
+
+function popSet(){
+	var winW = $(window).width();
+	var winH = $(window).height();
+	$(".pop,.pop_mask").css({"width":winW,"height":winH});
+}

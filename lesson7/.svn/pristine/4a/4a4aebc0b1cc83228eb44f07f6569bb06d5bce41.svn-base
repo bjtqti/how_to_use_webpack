@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>优惠券</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/coupon.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+
+	<header>
+        <span class="title">优惠券</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <!-- 页签tabs -->
+    <div class="polyTabs">
+    	<ul>
+        	<li class="current"><i>未使用优惠券</i></li>
+            <li><i>已失效优惠券</i></li>
+        </ul>
+    </div>
+
+    <!-- 优惠券列表 -->
+    
+        <div class="listMain">
+        
+            <div class="tabCon">
+            
+                <div class="list_youa page-0 page-current">
+                    
+                    <div class="coupon haitao">
+                        <div class="left">
+                            <div class="price"><em>&yen;</em>200</div>
+                            <div class="term">满100使用</div>
+                        </div>
+                        <div class="right">
+                            <div class="kind">海外购www.tepin.hk</div>
+                            <div class="date">2015.06.12-2015.07.18</div>
+                            <div class="explain">可在XXX使用</div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- 没有优惠券 -->
+                    <div class="empty" style="display:none;">
+                        <img src="images/empty_coupon.png" />
+                        <span>您目前没有友阿优惠券哟！</span>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="invalid page-1 hide">
+                    <div class="coupon youa_invalid">
+                        <div class="left">
+                            <div class="price"><em>&yen;</em>200</div>
+                            <div class="term">满100使用</div>
+                        </div>
+                        <div class="right">
+                            <div class="kind">特品汇www.tepin.hk</div>
+                            <div class="date">2015.06.12-2015.07.18</div>
+                            <div class="explain">可在XXX使用</div>
+                        </div>
+                        <div class="beUsed"></div>
+                    </div>
+                    <div class="coupon youa_invalid">
+                        <div class="left">
+                            <div class="price"><em>&yen;</em>20</div>
+                            <div class="term">满100使用</div>
+                        </div>
+                        <div class="right">
+                            <div class="kind">特品汇www.tepin.hk</div>
+                            <div class="date">2015.06.12-2015.07.18</div>
+                            <div class="explain">可在XXX使用</div>
+                        </div>
+                        <div class="expired"></div>
+                    </div>
+                    
+                    <!-- 没有优惠券 -->
+                    <div class="empty" style="display:none;">
+                        <img src="images/empty_coupon.png" />
+                        <span>您目前没有已失效优惠券哟！</span>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+        </div>
+</div>
+<script type="text/javascript" src="js/coupon.js"></script>
+</body>
+</html>

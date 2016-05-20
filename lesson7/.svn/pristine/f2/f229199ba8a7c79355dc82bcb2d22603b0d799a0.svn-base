@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#f3f3f3;
+}
+/* tabs */
+.polyTabs {
+	height: 1.16rem;
+	border-bottom: 1px solid #d7d7d7;
+	background-color:#fff;
+	position:relative;
+	z-index:2;
+}
+.polyTabs ul {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+	width: 100%;
+	height: 1.16rem;
+}
+.polyTabs ul li {
+	-webkit-appearance: none;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	display: block;
+	line-height: 1.16rem;
+	text-align: center;
+}
+.polyTabs ul li.current {
+	border-bottom:.053333rem solid #801da1;
+}
+.polyTabs ul li.current i{
+	color: #801da1;
+    
+}
+
+/* list */
+.listMain{
+	width: 100%;
+	overflow-x: hidden;
+}
+.listMain .tabCon{
+}
+.listMain .tabCon > div{
+	width: 100%;
+    position: absolute;
+	padding-bottom:1.38rem;
+}
+/*.listMain .list_youa{
+	display:none;
+}*/
+.listMain .coupon{
+	height: 120px;
+	margin-bottom: 15px;
+	box-shadow:3px 3px 3px #ebebeb;
+	margin:.32rem;
+	position:relative;
+	background: url(../images/union_normal.png) center no-repeat;
+	background-size: 100% 100%;
+	overflow:hidden;
+}
+.listMain .list_union .coupon .content,
+.listMain .union_invalid .content{
+	height:92px;
+}
+.listMain .coupon.tepin .price{
+	color:#e30182;
+}
+.listMain .coupon.haitao .price{
+	color:#733c93;
+}
+.listMain .coupon.hnmall .price{
+	color:#e50303;
+}
+.listMain .coupon.currency .price{
+	color:#ff8a00;
+}
+.listMain .coupon.line .price{
+	color:#00802a;
+}
+.listMain .coupon .price em,
+.listMain .youa_invalid .price em{
+	font-size:.64rem;
+	padding-right:.12rem;
+	font-weight:normal;
+}
+
+/* 友阿优惠券 */
+.listMain .list_youa .coupon .price,
+.listMain .youa_invalid .price{
+	font-size:.8rem;
+	letter-spacing: -2px;
+	font-weight:bold;
+	text-align:center;
+}
+.listMain .list_youa .coupon.tepin .kind{
+	color:#e30182;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon.haitao .kind{
+	color:#733c93;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon.hnmall .kind{
+	color:#e50303;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon.currency .kind{
+	color:#ff8a00;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon.line .kind{
+	color:#00802a;
+	padding:.12rem 0;
+}
+
+.listMain .list_youa .left,
+.listMain .youa_invalid .left{
+	padding:30px 6px 30px 16px;
+	float:left;
+	width:32%;
+}
+/*@media screen and (max-width: 321px) {
+	.listMain .list_youa .left{
+		padding:36px 0 30px 20px;
+	}
+}*/
+
+.listMain .list_youa .right,
+.listMain .youa_invalid .right{
+	padding:28px 0 0px 0;
+	float:right;
+	width:56%;
+	margin-right:3%;
+}
+.listMain .list_youa .coupon.tepin{
+	background: url(../images/youa_pink.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.listMain .list_youa .coupon.haitao{
+	background: url(../images/youa_purple.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.listMain .list_youa .coupon.hnmall{
+	background: url(../images/youa_red.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.listMain .list_youa .coupon.currency{
+	background: url(../images/youa_currency.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.listMain .list_youa .coupon.line{
+	background: url(../images/youa_line.png) center no-repeat;
+	background-size: 100% 100%;
+}
+
+.listMain .list_youa .coupon .term,
+.listMain .youa_invalid .term{
+	color:#666;
+	font-size:.32rem;
+	text-align:center;
+}
+.listMain .list_youa .coupon .kind,
+.listMain .youa_invalid .kind{
+	color:#333;
+	font-size:.32rem;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon .date,
+.listMain .youa_invalid  .date{
+	color:#666;
+	font-size:.266667rem;
+	padding:.12rem 0;
+}
+.listMain .list_youa .coupon .explain,
+.listMain .youa_invalid .explain{
+	color:#999;
+	background:url(../images/rightLine.png) left top no-repeat;
+	background-size:80% 3px;
+	padding:.12rem 0;
+	overflow:hidden;
+	height:.5rem;
+	line-height:.5rem;
+	width:100%;
+	font-size:.266667rem;
+}
+
+/* 联盟优惠券 */
+.listMain .content:after{
+	content: " ";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.listMain .list_union .left,
+.listMain .union_invalid .left{
+	padding:36px 0 0 20px;
+	float:left;
+	width:33%;
+}
+.listMain .list_union .right,
+.listMain .union_invalid .right{
+	padding:.54rem 0 .14rem 0;
+	float:left;
+	width:58%;
+}
+
+.listMain .list_union .coupon .price,
+.listMain .union_invalid .price{
+	font-size:.8rem;
+	letter-spacing: -2px;
+	font-weight:bold;
+	color:#0091f6;
+}
+.listMain .list_union .coupon .company,
+.listMain .union_invalid .company{
+	font-size:.4rem;
+	color:#0091f6;
+}
+.listMain .list_union .coupon .explain,
+.listMain .union_invalid .explain{
+	color: #333;
+	background: url(../images/rightLine.png) left top no-repeat;
+	background-size: 80% 2px;
+	width:100%;
+	overflow:hidden;
+	height: 1.04rem;
+    line-height: .4rem;
+    font-size: .27rem;
+	padding-top:.24rem;
+	margin-top:.12rem;
+}
+.listMain .list_union .coupon .bottom,
+.listMain .union_invalid .bottom{
+	clear:both;
+	margin:0 25px 0 20px;
+	line-height:28px;
+}
+@media screen and (max-width: 321px) {
+	.listMain .list_union .coupon .bottom,
+	.listMain .union_invalid .bottom{
+		margin:0 12px 0 20px;
+	}
+	.listMain .list_union .coupon .explain,
+	.listMain .union_invalid .explain{
+		height:1rem;
+		line-height:.48rem;
+	}
+}
+.listMain .list_union .coupon .bottom:after,
+.listMain .union_invalid .bottom:after{
+	content: " ";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.listMain .list_union .coupon .bottom .term,
+.listMain .union_invalid .bottom .term{
+	float:left;
+	color:#333;
+	font-size:.32rem;
+}
+.listMain .list_union .coupon .bottom .date,
+.listMain .union_invalid .bottom .date{
+	float:right;
+	color:#666;
+	font-size:.266667rem
+}
+
+.listMain .invalid .youa_invalid {
+    background: url(../images/youa_invalid.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.listMain .invalid .union_invalid {
+    background: url(../images/union_invalid.png) center no-repeat;
+    background-size: 100% 100%;
+}
+.listMain .invalid .youa_invalid .price,
+.listMain .invalid .youa_invalid .kind,
+.listMain .invalid .youa_invalid .company,
+.listMain .invalid .youa_invalid .date,
+.listMain .invalid .youa_invalid .term,
+.listMain .invalid .youa_invalid .explain,
+
+.listMain .invalid .union_invalid .price,
+.listMain .invalid .union_invalid .company,
+.listMain .invalid .union_invalid .explain,
+.listMain .invalid .union_invalid .bottom .term,
+.listMain .invalid .union_invalid .bottom .date{
+	color:#999;
+}
+
+.invalid .coupon{
+	position:relative;
+}
+.beUsed{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:url(../images/beUsed.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	width:50%;
+	height:100%;
+	width: 70px;
+	height: 70px;
+}
+.expired{
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:url(../images/expired.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	width:50%;
+	height:100%;
+	width: 70px;
+	height: 70px;
+}
+
+.selected{
+	width:1rem;
+	height:1rem;
+	background:url(../images/selectCoupon.png) no-repeat;
+	background-size:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	display:none;
+}
+.hover .selected{
+	display:block;
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>添加收货地址</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/adress.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#ededed">
+<div id="load-box"></div>
+
+<div class="box box-pb">
+
+	<!--header-->
+    <header>
+        <span class="title">添加新地址</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+        <a class="screening" href="javascript:void(0);">保存</a>
+    </header>
+    
+    <p class="prompt">温馨提示：收件人请使用和身份证号对应的真实姓名，否则您购买的商品将无法通过海关检查！</p>
+    <div class="adress">
+        <p>
+            <span class="wait"><i>*</i>姓名</span>
+            <span>
+                <input type="text" oninput="OnInput (this)" placeholder="建议输入您的真实姓名">
+                <i class="iconfont icon-closefill"></i>
+            </span>
+        </p>
+        <p>
+            <span class="wait"><i>*</i>身份证号</span>
+            <span>
+                <input type="text" oninput="OnInput (this)" placeholder="填写后，我们会加密处理">
+                <i class="iconfont icon-closefill"></i>
+            </span>
+        </p>
+        <div class="tenBorder"></div>
+        <p class="noBorder">
+            <span class="wait"><i>*</i>手机号码</span>
+            <span>
+                <input type="tel" oninput="OnInput (this)" placeholder="请输入您的手机号">
+                <i class="iconfont icon-closefill"></i>
+            </span>
+        </p>
+        
+        <p>
+            <span class="wait"><i>*</i>省份</span>
+            <span>
+                <select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择省份</option>
+                </select>
+            </span>
+        </p>
+        <p>
+            <span class="wait"><i>*</i>城市</span>
+            <span>
+                <select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择城市</option>
+                </select>
+            </span>
+        </p>
+        <p>
+            <span class="wait"><i>*</i>区县</span>
+            <span>
+                <select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择区县</option>
+                </select>
+            </span>
+        </p>
+        <!--<p>
+            <span class="wait"><i>*</i>收货地址</span>
+            <span class="flex">
+            	<select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择</option>
+                </select>
+                <select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择</option>
+                </select>
+                <select name="city" id="selCities_" onchange="region.changed(this, 3, 'selDistricts_')">
+                	<option value="">请选择</option>
+                </select>
+            </span>
+        </p>-->
+        <p>
+            <span class="wait"><i>*</i>详细地址</span>
+            <span class="flex">
+            	<textarea oninput="OnInput (this)" placeholder="请输入详细地址"></textarea>
+                <i class="iconfont icon-closefill"></i>
+            </span>
+        </p>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="js/adress.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>账户设置-修改登录密码</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pop.css">
+<link rel="stylesheet" href="css/account.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f7f7f7">
+<div id="load-box"></div>
+<div class="box box-pb">
+	<!--header-->
+    <header>
+        <span class="title">修改登录密码</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="account">
+    	
+        <div class="org-updataPwd">
+            <div class="org-oldPwd">
+                <em></em>
+                <input type="text" placeholder="请输入旧密码">
+            </div>
+            <div class="org-newPwd">
+                <em></em>
+                <input type="text" placeholder="请输入新密码">
+            </div> 
+            <div class="org-repeatNewPwd">
+                <em></em>
+                <input type="text" placeholder="重复新密码">
+            </div>   
+        </div>
+        
+        <div class="org-qdModify">确定修改</div>
+        
+    </div>
+    
+</div>
+
+<div class="pop">
+	<div class="pop_mask"></div>
+    <div class="con con_1">
+    	<div class="con_title"><i></i>提示</div>
+    	<div class="pop_detail">请阅读协议</div>
+        <div class="pop_btn">
+        	<a href="javascript:void(0);" class="single_btn">确定</a>
+        </div>
+    </div>
+    <div class="con con_2" style="display:block;">
+    	<div class="con_title"><i></i>提示</div>
+    	<div class="pop_detail">确定清空搜索记录吗？</div>
+        <div class="pop_btn">
+        	<a href="javascript:void(0);" class="double_btn">取消</a>
+        	<a href="javascript:void(0);" class="double_btn">确定</a>
+        </div>
+    </div>
+</div>
+
+<div class="tips tip_in">
+	<em>注册成功</em>
+    <em>重复密码错误，<br>请重新输入！</em>
+    <em style="display:block;">密码格式不符合要求，请重新输入<br>正确的6-16个字符的密码！</em>
+</div>
+
+<script type="text/javascript" src="js/account.js"></script>
+</body>
+</html>

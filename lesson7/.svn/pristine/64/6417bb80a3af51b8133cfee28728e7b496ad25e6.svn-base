@@ -1,0 +1,87 @@
+
+/**
+ * JS评分效果
+ */
+ function Score(options) {
+	this.config = {
+		selector                  :   '.star',     // 评分容器
+		renderCallback            :   null,        // 渲染页面后回调
+		callback                  :   null         // 点击评分回调                         
+	};
+
+	this.cache = {
+
+		iStar  : 0,
+		iScore : 0
+	};
+
+	this.init(options);
+ }
+
+ Score.prototype = {
+
+	constructor: Score,
+
+	init: function(options){
+		this.config = $.extend(this.config,options || {});
+		var self = this,
+			_config = self.config,
+			_cache = self.cache;
+
+		self._renderHTML();
+	},
+	_renderHTML: function(){
+		var self = this,
+			_config = self.config;
+		/*var html = '<span class="desc"></span>' + 
+				   '<p class="star-p hidden"></p>';*/
+		$(_config.selector).each(function(index,item){
+			//$(item).append(html);
+			$(item).wrap($('<div class="parentCls" style="position:relative"></div>'));
+			var parentCls = $(item).closest('.parentCls');
+			self._bindEnv(parentCls);
+			_config.renderCallback && $.isFunction(_config.renderCallback) && _config.renderCallback();
+		});
+
+	},
+	_bindEnv: function(parentCls){
+		var self = this,
+			_config = self.config,
+			_cache = self.cache;
+
+		$(_config.selector + ' li',parentCls).each(function(index,item){
+
+			// 鼠标点击
+			$(item).on("tap",function(e){
+				var index = $(_config.selector + ' li',parentCls).index($(this));
+				
+				//alert( index+1 );
+				//规定星级评定不得小于3
+				if(index < 2){
+					index = 2;
+				}
+
+				_cache.iStar = index + 1;
+				
+				ismax(_cache.iStar);
+				
+				!$('p',parentCls).hasClass('hidden') && $('p',parentCls).addClass('hidden');
+				_config.callback && $.isFunction(_config.callback) && _config.callback({starAmount:_cache.iStar});
+				
+				
+				
+			});
+			
+		});
+
+		function ismax(iArg) {
+			_cache.iScore = iArg || _cache.iStar;
+			var lis = $(_config.selector + ' li',parentCls);
+			
+			for(var i = 0; i < lis.length; i++) {
+				lis[i].className = i < _cache.iScore ? "iconfont icon-34wujiaoxingpingfenshixin" : "iconfont icon-35wujiaoxingpingfenkongxin2";
+			}
+		}
+	}
+ };
+

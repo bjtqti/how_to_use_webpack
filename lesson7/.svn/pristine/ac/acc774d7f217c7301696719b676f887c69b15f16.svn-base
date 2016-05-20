@@ -1,0 +1,38 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	shareSet();
+	lineSet();
+});
+
+/* 分享按钮点击 */
+function shareSet(){
+	var winW = $(window).width();
+	var winH = $(window).height();
+	$(".mask").css({"width":winW,"height":winH});
+
+	$(".topShare").on("tap",function(){
+		$(".bottomShare").css({"bottom":"0"});
+		$(".mask").css({"opacity":"1"}).show();
+		
+	});
+	$(".cancelShare,.mask").on("tap",function(){
+		$(".bottomShare").css({"bottom":"-100%"});
+		$(".mask").css({"opacity":"0"}).hide();
+		
+	});
+}
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".bottomShare .cancelShare").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}

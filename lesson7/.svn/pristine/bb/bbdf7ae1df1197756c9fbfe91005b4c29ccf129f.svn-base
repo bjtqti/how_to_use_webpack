@@ -1,0 +1,48 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	lineSet();
+	searchInput();
+});
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".addBtns,.selectArea .order-time .toolsArea,.adress p,.adress select").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}
+
+/* 搜索框获取/失去 焦点 */
+function searchInput(){
+	$(".adress span input").focus(function(){
+		if($(this).val() != ""){
+			$(this).next("i").show();
+		}
+	})
+	$(".adress span input").blur(function(){
+		$(this).next("i").hide();
+	});
+	
+	$(".adress span i.iconfont").on("tap",function(){
+		$(this).prev().val("");
+		$(this).hide();
+	});
+}
+
+/* 搜索框内容输入 */
+function OnInput (obj) {
+	var st = obj.value;
+	var oobjec = obj.parentNode.getElementsByTagName('i')[0];
+	if(st == ""){
+		oobjec.style.display = "none";
+	}else{
+		oobjec.style.display = "block";
+	}
+}

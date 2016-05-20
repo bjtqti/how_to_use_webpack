@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>搜索</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/search.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body class="grey">
+<div id="load-box"></div>
+<div class="search">
+	<div class="search-wrap">
+        <div class="search-header">
+            <div class="search-box">
+                <input id="search-box" type="search" oninput="OnInput (event)" placeholder="寻找宝贝">
+                <span></span>
+                <div class="reset"><i class="iconfont icon-closefill"></i></div>
+            </div>
+        	<div class="search-btn">取消</div>
+        </div>
+      	<div class="searchHot clearfix">
+        	<span>热搜</span>
+            <div>
+                <a href="#">洗衣液</a>
+                <a href="#">女士香水</a>
+                <a href="#">洗衣液</a>
+                <a href="#">女士香水</a>
+            </div>
+        </div>
+      	<div class="searchList">
+        	<span class="clearfix">
+            	<em>历史搜索</em>
+                <i>清空记录</i>
+            </span>
+        	<a href="#">洗衣液</a>
+            <a href="#">洗衣液</a>
+            <a href="#">洗衣液</a>
+        </div>
+        <div class="searchOut">
+        	<a href="#">金利来</a>
+            <a href="#">金纺</a>
+            <a href="#">金立手机</a>
+        </div>
+  </div>
+  
+  
+  
+</div>
+<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>

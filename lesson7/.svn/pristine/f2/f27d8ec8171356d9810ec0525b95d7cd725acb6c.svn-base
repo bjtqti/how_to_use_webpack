@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>优惠券详情</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/qr_detail.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">优惠券详情</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+
+	<div class="qr_detail">
+    
+    	<!-- 无二维码移除此DIV -->
+        <div class="qr">
+            <img src="images/qr.png">
+            <div class="arrow"></div>
+        </div>
+        
+        
+        
+        <div class="con clearfix">
+            <dl>
+                <dt>优惠券号</dt>
+                <dd>0300183547</dd>
+            </dl>
+            <dl>
+                <dt>优惠券名</dt>
+                <dd>罗莎蛋糕5元优惠券</dd>
+            </dl>
+            <dl>
+                <dt>使用平台</dt>
+                <dd>罗莎蛋糕线下门店</dd>
+            </dl>
+            <dl>
+                <dt>发券日期</dt>
+                <dd>2015/06/09</dd>
+            </dl>
+            <dl>
+                <dt>使用期限</dt>
+                <dd>2015/08/10</dd>
+            </dl>
+            <dl>
+                <dt>使用说明</dt>
+                <dd>这里是使用说明这里是使用说明这里是使用说明这里是使用说明这里是使用说明这里是使用说明。</dd>
+            </dl>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

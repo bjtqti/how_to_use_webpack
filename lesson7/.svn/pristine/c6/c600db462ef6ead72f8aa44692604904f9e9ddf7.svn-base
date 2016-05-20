@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>爆款</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/explo.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+    <!--header-->
+    <header>
+        <a class="logo" href="#">
+            <img src="images/indexlogo.png">
+        </a>
+        <a class="indexQrcode" href="#">
+            <i></i>
+        </a>
+        <a class="indexSearch" href="search.html">
+            <i></i>
+        </a>
+    </header>
+    
+    <div class="polyTabs">
+    	<ul>
+        	<li class="current"><i>美容彩妆</i></li>
+            <li><i>母婴用品</i></li>
+            <li><i>营养保健</i></li>
+        </ul>
+    </div>
+    
+    <div class="polyCon">
+    	<div id="page-content">
+        	<div class="poly_1 page-0 page-current">
+        		<div class="activityGeneral">
+                    <a href="#" class="clearfix">
+                        <img src="images/pic8.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <a href="#" class="clearfix">
+                        <img src="images/pic9.gif">
+                        <div class="soldOut"></div><!-- 已抢光 -->
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <a href="#" class="clearfix">
+                        <img src="images/pic10.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                </div>
+        	</div>
+            <div class="poly_2 page-1 hide">
+        		<div class="activityGeneral">
+                    <a href="#" class="clearfix">
+                        <img src="images/pic8.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <!--<a href="#" class="clearfix">
+                        <img src="images/pic9.gif">
+                        <div class="soldOut"></div>
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <a href="#" class="clearfix">
+                        <img src="images/pic10.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>-->
+                </div>
+        	</div>
+            <div class="poly_3 page-2 hide">
+        		<div class="activityGeneral">
+                    <a href="#" class="clearfix">
+                        <img src="images/pic8.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <!--<a href="#" class="clearfix">
+                        <img src="images/pic9.gif">
+                        <div class="soldOut"></div>
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>
+                    <a href="#" class="clearfix">
+                        <img src="images/pic10.gif">
+                        <div class="right">
+                            <span class="name">荷兰原装Hero baby【免税店】奶粉1段（0-6个月）800g（...</span>
+                            <span class="country"><i><img src="images/ico_flag.png" alt=""></i>荷兰</span>
+                            <span class="nowPrice">&yen;99.0</span>
+                            <span class="oldPrice">&yen;199.0</span>
+                        </div>
+                    </a>-->
+                </div>
+        	</div>
+        </div>
+    </div>
+    
+    
+    
+    <!--bottomNav-->
+    <nav class="bottomNav">
+        <ul class="clearfix">
+            <li><a href="#"><i></i>海外购</a></li>
+            <li><a href="#"><i></i>分类</a></li>
+            <li><a href="#" class="nav_hover"><i></i>爆款</a></li>
+            <li><a href="#"><i></i>购物车</a></li>
+            <li><a href="#"><i></i>个人中心</a></li>
+        </ul>
+    </nav>
+    
+</div>
+<script type="text/javascript" src="js/explo.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+.specialActivity{
+}
+.specialActivity .banner{
+}
+.specialActivity .banner img{
+	width:100%;
+}
+.specialActivity .specialActivity_list{
+	height:auto;
+	width:100%;
+	padding-bottom:.32rem;
+}
+.specialActivity a{
+	display:block;
+	width:50%;
+	float:left;
+	padding-top:1px;
+}
+.specialActivity a > div{
+	border-bottom:1px solid #d7d7d7;
+	padding:0 .32rem .24rem .32rem;
+	position:relative;
+}
+.specialActivity a > div .jpsg{
+	position:absolute;
+	left:.4rem;
+	top:.3rem;
+	width:.78rem;
+	height:.78rem;
+	background:url(../images/jpsg.png) no-repeat;
+	background-size:100%;
+}
+.specialActivity a > div .soldOut {
+    width: 1.813rem;
+    height: 1.813rem;
+    background-image: url(../images/ico_soldOut.png);
+    background-size: 100%;
+    position: absolute;
+    left:1.54rem;
+    top: 1.54rem;
+}
+
+.specialActivity a:nth-child(2n) > div{
+	border-left:1px solid #d7d7d7;
+}
+.specialActivity a:last-child > div,
+.specialActivity a:nth-last-child(2) > div{
+	border-bottom:0;
+}
+.specialActivity a > div > img{
+	width:4.2rem;
+    height:4.2rem;
+}
+.specialActivity a .country {
+    display: block;
+    margin: .4rem 0 .12rem;
+    line-height: .54rem;
+	color:#333;
+	font-size:.24rem;
+}
+.specialActivity a .country i {
+    width: .46rem;
+    height: .46rem;
+    display: inline-block;
+    margin-right: .2rem;
+    vertical-align: top;
+}
+.specialActivity a .country img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.specialActivity a p{
+	color:#333;
+	margin:0 0 .2rem;
+	line-height:.5rem;
+	height:1rem;
+	display:block;
+	overflow:hidden;
+}
+.specialActivity a .nowPrice {
+    float: left;
+    color: #ed1946;
+    font-size: .6rem;
+    line-height: .6rem;
+    display: block;
+}
+.specialActivity a .oldPrice {
+    text-decoration: line-through;
+    float: right;
+    color: #999;
+    display: inline-block;
+    line-height: .6rem;
+}

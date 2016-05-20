@@ -1,0 +1,143 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	searchInput();
+	searchOrder();
+	screening();
+	screenSecond();
+	lineSet();
+	secondSure();
+});
+
+/* 搜索框获取/失去 焦点 */
+function searchInput(){
+	
+	$("#search-box").focus(function(){
+		$(".search-box").addClass("searchFoucs");
+		if($(this).val() != ""){
+			$(".search-box").find(".reset").show();
+		}
+	})
+	$("#search-box").blur(function(){
+		$(".search-box").removeClass("searchFoucs");
+		$(".search-box").find(".reset").hide();
+	});
+	
+	$(".search-box .reset").on("tap",function(){
+		$("#search-box").val("");
+		$(this).hide();
+		$("#search-box").focus();
+	});
+
+}
+
+/* 搜索框内容输入 */
+function OnInput (event) {
+	var st = $("#search-box").val();
+	if(st == ""){
+		$(".searchHot,.searchList").show();
+		$(".searchOut").hide();
+		$(".search-box").find(".reset").hide();
+	}else{
+		$(".searchHot,.searchList").hide();
+		$(".searchOut").show();
+		$(".search-box").find(".reset").show();
+	}
+	$(".search-box .reset").on("tap",function(){
+		$("#search-box").val("");
+		$(".searchHot,.searchList").show();
+		$(".searchOut").hide();
+		$(this).hide();
+		$("#search-box").focus();
+	});
+}
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".search-header,.searchHot,.search_order,.specialActivity_list a > div,.helpList dl,nav.bottomNav,.searchHot a,.searchList span i,.searchList span,.searchList a,.searchOut a").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}
+
+/* 点击 默认/价格/销量 */
+function searchOrder(){
+	$(".search_order > a").on('tap', function(){
+		
+		if($(this).hasClass("jiage active")){
+			$(this).addClass("jiageDouble");
+			$(".search_order > a").removeClass("active");
+		}else if($(this).hasClass("jiage jiageDouble")){
+			$(this).addClass("active");
+			$(".search_order > a").removeClass("jiageDouble");
+		}else{
+			$(".search_order > a").removeClass("active jiageDouble");
+			$(this).addClass("active")
+		}
+		
+	})
+}
+
+/* 点击筛选 */
+function screening(){
+	var homeW = $(".home-page").width();
+	var homeH = $(".home-page").height();
+	$(".home-page .mask").css({"width":homeW,"height":homeH});
+	$(".searchResult .search header .screening").on('tap', function(){
+		$(".menu-slider").addClass("rollIn-slideLeft");
+		$(".home-page").addClass("rollOut-slideLeft");
+		
+		$(".home-page .mask").css({"opacity":"1"}).show();
+		showOff();
+	})
+	
+	$(".menu-slider header .screening,.mask").on("tap",function(e){
+		$(".menu-slider,.second-slider").removeClass("rollIn-slideLeft");
+		$(".home-page").removeClass("rollOut-slideLeft");
+		$(".mask").css("opacity","0").hide();
+	})
+	
+	$(".second-slider header .screening").on("tap",function(e){
+		$(".second-slider").removeClass("rollIn-slideLeft");
+	});
+}
+
+//只显示有货
+function showOff(){
+	$(".showHave dl dd").on('tap swiper', function(){
+		if($(this).hasClass("onShow")){		//显示开
+			$(this).removeClass("onShow");
+		}else{  							//显示关
+			$(this).addClass("onShow");
+		}
+	});
+}
+
+/* 点击进入筛选二级 */
+function screenSecond(){
+	$(".menu-slider .helpList a").on("tap",function(){
+		$(".second-slider").addClass("rollIn-slideLeft");
+	});
+	
+	$(".second-slider .backArrow").on("tap",function(){
+		$(".second-slider").removeClass("rollIn-slideLeft");
+		
+	});
+}
+
+/* 筛选二级点选 */
+function secondSure(){
+	$(".second-slider .helpList dl").on("tap",function(){
+		if($(this).find("dd").hasClass("icon-check")){
+			$(this).find("dd").removeClass("icon-check");
+		}else{
+			$(this).find("dd").addClass("icon-check");
+		}
+	});
+}

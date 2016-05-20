@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>提交订单-选择优惠券</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/coupon.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#ededed">
+<div id="load-box"></div>
+<div class="box box-pb">
+
+	<!--header-->
+    <header>
+        <span class="title">选择优惠券</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <!-- 有优惠券 -->
+    <div class="listMain selectCoupon">
+
+    	<div class="list_youa">
+            <div class="coupon tepin">
+                <div class="left">
+                    <div class="price"><em>&yen;</em>200</div>
+                    <div class="term">满10000使用</div>
+                </div>
+                <div class="right">
+                    <div class="kind">特品汇www.tepin.com</div>
+                    <div class="date">2015.06.12-2015.07.18</div>
+                    <div class="explain">可在XXX使用使用使用使用使用使用使用</div>
+                </div>
+                <div class="selected"></div>
+            </div>
+            <div class="coupon haitao hover">
+                <div class="left">
+                    <div class="price"><em>&yen;</em>200</div>
+                    <div class="term">满100使用</div>
+                </div>
+                <div class="right">
+                    <div class="kind">海外购www.tepin.hk</div>
+                    <div class="date">2015.06.12-2015.07.18</div>
+                    <div class="explain">可在XXX使用</div>
+                </div>
+                <div class="selected"></div>
+            </div>
+        </div>
+        
+        <div class="list_union">
+            <div class="coupon tepin">
+                <div class="content">
+                    <div class="left">
+                        <div class="price"><em>&yen;</em>200</div>
+                    </div>
+                    <div class="right">
+                        <div class="company">罗莎蛋糕</div>
+                        <div class="explain">仅可购买蛋糕类商品，奶品除外</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="term">满100使用</div>
+                    <div class="date">2015.06.12-2015.07.18</div>
+                </div>
+                <div class="selected"></div>
+            </div>
+            <div class="coupon haitao">
+                <div class="content">
+                    <div class="left">
+                        <div class="price"><em>&yen;</em>20</div>
+                    </div>
+                    <div class="right">
+                        <div class="company">罗莎蛋糕</div>
+                        <div class="explain">仅可购买蛋糕类商品仅可购买蛋糕类商品仅可购买蛋糕类商品仅可购买蛋糕类商品，奶品除外</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="term">满100使用</div>
+                    <div class="date">2015.06.12-2015.07.18</div>
+                </div>
+                <div class="selected"></div>
+            </div>
+            <div class="coupon hnmall">
+                <div class="content">
+                    <div class="left">
+                        <div class="price"><em>&yen;</em>20</div>
+                    </div>
+                    <div class="right">
+                        <div class="company">罗莎蛋糕</div>
+                        <div class="explain">仅可购买蛋糕类商品，奶品除外</div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="term">满100使用</div>
+                    <div class="date">2015.06.12-2015.07.18</div>
+                </div>
+                <div class="selected"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- 没有优惠券 -->
+    <div class="empty" style="display:none;">
+        <img src="images/empty_selectCoupon.png" />
+        <span>您目前没有可用优惠券哟~</span>
+    </div>
+    
+</div>
+
+<script type="text/javascript" src="js/coupon.js"></script>
+</body>
+</html>

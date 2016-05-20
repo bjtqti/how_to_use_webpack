@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>订单详情-物流信息</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/orderDetail.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">物流信息</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="polyTabs">
+    	<ul>
+        	<li class="current"><i>包裹一</i></li>
+            <li><i>包裹二</i></li>
+            <li><i>包裹三</i></li>
+        </ul>
+    </div>
+    
+    <div class="polyCon">
+    	<div id="page-content">
+    
+    		<div class="logistics page-0 page-current">
+                <div class="info">
+                    <span>物流详情</span>
+                    <p>物流公司：xxxx xxxxxx</p>
+                    <p>物流编号：8888888888888</p>
+                </div>
+                
+                <div class="rate">
+                    <span>物流动态</span>
+                    
+                    <div class="org-wuliuStatusList">
+                        <div class="org-wuliuStatus org-curBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuCur">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在海外购购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已到达芙蓉区刘国辉，即将派送派件员是芙蓉区陈国辉，电话：15382047628</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您的订单将在1天内到达湖南省配送中心</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单在特品汇，即将发往长沙中心扫描员是特品汇</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已经打印完毕，正在拣货中</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已经支付成功，您选择的支付方式为：支付宝</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-starBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在特品汇购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <span class="source">信息来源：顺风快递</span>
+                    
+                </div>
+                
+            </div>
+    
+    		<div class="logistics page-1 hide">
+                <div class="info">
+                    <span>物流详情</span>
+                    <p>物流公司：xxxx xxxxxx</p>
+                    <p>物流编号：8888888888888</p>
+                </div>
+                
+                <div class="rate">
+                    <span>物流动态</span>
+                    
+                    <div class="org-wuliuStatusList">
+                        <div class="org-wuliuStatus org-curBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuCur">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在海外购购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已到达芙蓉区刘国辉，即将派送派件员是芙蓉区陈国辉，电话：15382047628</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您的订单将在1天内到达湖南省配送中心</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单在特品汇，即将发往长沙中心扫描员是特品汇</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已经打印完毕，正在拣货中</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已经支付成功，您选择的支付方式为：支付宝</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-starBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在特品汇购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <span class="source">信息来源：顺风快递</span>
+                    
+                </div>
+                
+            </div>
+    
+    		<div class="logistics page-2 hide">
+                <div class="info">
+                    <span>物流详情</span>
+                    <p>物流公司：xxxx xxxxxx</p>
+                    <p>物流编号：8888888888888</p>
+                </div>
+                
+                <div class="rate">
+                    <span>物流动态</span>
+                    
+                    <div class="org-wuliuStatusList">
+                        <div class="org-wuliuStatus org-curBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuCur">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在海外购购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已到达芙蓉区刘国辉，即将派送派件员是芙蓉区陈国辉，电话：15382047628</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您的订单将在1天内到达湖南省配送中心</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单在特品汇，即将发往长沙中心扫描员是特品汇</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>订单已经打印完毕，正在拣货中</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-midBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已经支付成功，您选择的支付方式为：支付宝</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                        <div class="org-wuliuStatus org-starBg">
+                            <div class="org-wuLiuLeft">
+                                <em class="org-middle"></em>
+                            </div>
+                            <p class="org-wuLiuFont org-wuLiuMid">
+                                <span>您已签收本次订单包裹，本次配送完成。感谢您在特品汇购物，祝您生活愉快！</span>
+                                <span class="org-wuLiuTime">2015-02-26 18:24:39</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <span class="source">信息来源：顺风快递</span>
+                    
+                </div>
+                
+            </div>
+    
+    	</div>
+    </div>
+    
+</div>
+<script type="text/javascript" src="js/orderDetail.js"></script>
+</body>
+</html>

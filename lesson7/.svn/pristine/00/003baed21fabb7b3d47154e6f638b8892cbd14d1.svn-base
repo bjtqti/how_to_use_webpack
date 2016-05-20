@@ -1,0 +1,218 @@
+// JavaScript Document
+
+$(document).ready(function(){
+	goodsFav();
+	lineSet();
+	detailLink();
+	goods_buy();
+	shareSet();
+	promotionSet();
+});
+
+/* 移动幻灯事件 */
+TouchSlide({ 
+	slideCell:"#banner",
+	titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+	mainCell:".bd ul", 
+	effect:"leftLoop", 
+	autoPlay:true,//自动播放
+	autoPage:true //自动分页
+});
+
+/* 收藏 */
+function goodsFav(){
+	$(".goods_fav").on("tap",function(){
+		if($(this).find("i").hasClass("icon-xinman")){
+			$(this).find("i").removeClass("icon-xinman");
+			$(this).find("i").addClass("icon-xin");
+		}else{
+			$(this).find("i").removeClass("icon-xin");
+			$(this).find("i").addClass("icon-xinman");
+		}
+	});
+}
+
+/* 线条精度 */
+function lineSet(){
+	if (window.devicePixelRatio && devicePixelRatio >= 2) {
+	
+	  var testElem = document.createElement('div');
+	  testElem.style.border = '.5px solid transparent';
+	  document.body.appendChild(testElem);
+	  if (testElem.offsetHeight == 1){
+		$(".goodsBtns,.goodsHeader,.comPics img,nav.bottomNav,.pro,.bottomShare .cancelShare,.goods_top .title,.goodsSure > img,.goodsSure,.goodsSureBtn").css({"border-width":".5px"});
+	  }
+	  document.body.removeChild(testElem);
+	}
+}
+
+/* 图文详情切换 */
+var isAnimating = false;
+function detailLink(){	
+	$(".goodsHeader ul li").on('tap',function(){
+		
+		var frontIndex = $(".goodsHeader ul li.current").index();
+		var thisIndex = $(this).index();
+		
+		if(isAnimating || thisIndex == frontIndex){
+			return;
+		}
+		
+		$(".goodsHeader ul li").removeClass("current");
+		$(this).addClass("current");
+		
+		pageSwitch(frontIndex,thisIndex);
+	})
+}
+
+/* 点立即购买弹框 */
+function goods_buy(){
+	var winW = $(window).width();
+	var winH = $(window).height();
+	$(".goodsDialog,.mask").css({"width":winW,"height":winH});
+	$(".goods_buy").on("tap",function(){
+		$(".goodsDialog").css({"bottom":"0"});
+		$(".mask").css({"opacity":"1"}).show();
+	})
+	$(".goodsDialog .con .icon-guanbi").on("touchend",function(e){
+		$(".goodsDialog").css({"bottom":"-100%"});
+		$(".mask").css({"opacity":"0"}).hide();
+		event.preventDefault();    //  阻止事件冒泡，将tap改为touchend，并阻止touchend的默认行为event.preventDefault();
+	})
+	sizeColor();
+}
+
+
+
+/* 选择尺码/颜色和数量 */
+function sizeColor(){
+	$(".size-select a").on("tap",function(){
+		$(".size-select a").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".color-select a").on("tap",function(){
+		$(".color-select a").removeClass("active");
+		$(this).addClass("active");
+	});
+	
+	// 数目加减
+	var obj = $('.inve'),
+		oPrev = obj.find(".invel"),
+		oInp = obj.find(".invev"),
+		oNext = obj.find(".inver"),
+		iNum = 1;
+	// 点击减数
+	
+	oPrev.on("tap",function(){
+		iNum = oInp.val();
+		if(iNum-1 <= 0){
+			iNum = 1;
+			alert("1件起售");
+			return false;
+		}else{
+			iNum--; 
+		}
+		oInp.val(iNum);
+	});
+	// 点击加数
+	oNext.on("tap",function(){
+		iNum = oInp.val();
+		iNum++;
+		oInp.val(iNum);
+	}); 
+}
+
+/* 分享按钮点击 */
+function shareSet(){
+	var winW = $(window).width();
+	var winH = $(window).height();
+	$(".mask").css({"width":winW,"height":winH});
+
+	$(".goods_share").on("tap",function(){
+		$(".bottomShare").css({"bottom":"0"});
+		$(".mask").css({"opacity":"1"}).show();
+		
+	});
+	$(".cancelShare,.mask").on("tap",function(){
+		$(".bottomShare").css({"bottom":"-100%"});
+		$(".mask").css({"opacity":"0"}).hide();
+		
+	});
+}
+
+/* 促销展开 */
+function promotionSet(){
+	
+	var spanLen = $(".promotion dd").find("span").length;
+	$(".promotion p").hide();
+	if(spanLen >　2){
+		$(".promotion span").css({"display":"inline-block"});
+		$(".promotion span i").hide();
+		$(".promotion span").eq(0).css({"display":"block"});
+		$(".promotion span").eq(0).find("i").show();
+	}
+
+	$(".promotion .fold").on("tap",function(){
+		if($(this).hasClass("unfold")){
+			$(this).removeClass("unfold");
+			$(".promotion p").hide();
+			if(spanLen >　2){
+				$(".promotion span").css({"display":"inline-block"});
+				$(".promotion span i").hide();
+				$(".promotion span").eq(0).css({"display":"block"});
+				$(".promotion span").eq(0).find("i").show();
+			}
+		}else{
+			$(this).addClass("unfold");
+			$(".promotion p").show();
+			if(spanLen >　2){
+				$(".promotion span").css({"display":"block"});
+				$(".promotion span i").show();
+			}
+		}
+	});
+}
+
+function pageSwitch(nowP,activeP){
+	
+	var direction;
+
+	if (nowP < activeP) { 
+		direction = 0;
+	}else{
+		direction = 1;
+	};
+
+	var pageIndex = nowP;
+	var lastPage = ".page-"+activeP;
+
+	var nowPage = ".page-"+pageIndex;
+
+	switch(direction) {
+		case 0:
+			outClass = 'pt-page-moveToLeft';
+			inClass = 'pt-page-moveFromRight';
+			break;
+		case 1:
+			outClass = 'pt-page-moveToRight';
+			inClass = 'pt-page-moveFromLeft';
+			break;
+	}
+	isAnimating = true;
+	$(lastPage).removeClass("hide");
+	
+	$(nowPage).addClass(outClass);
+	$(lastPage).addClass(inClass);
+	
+	setTimeout(function(){		
+		$(nowPage).removeClass('page-current');
+		$(nowPage).removeClass(outClass);
+		$(nowPage).addClass("hide");
+		
+		$(lastPage).addClass('page-current');
+		$(lastPage).removeClass(inClass);
+
+		isAnimating = false;
+	},600);
+
+}

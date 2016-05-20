@@ -60,6 +60,7 @@ $ npm run start
 * [打包jsx和es6文件](/lesson4)
 * [演示热替换](/lesson5)
 * [打包成压缩文件](/lesson6)
+* [Gulp实例演示](/lesson7)
 
 ### 参考
 

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>找回密码</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/user.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#fff">
+<div id="load-box"></div>
+<div class="box">
+
+	<div class="reg">
+    	<!--header-->
+        <header>
+            <span class="title">找回密码</span>
+            <a href="javascript:void(0);" class="backArrow"></a>
+            <a class="delBtn" href="javascript:void(0);">
+                <i></i>
+            </a>
+        </header>
+        
+        <div class="org-cardTitleBig">
+            <div class="org-cardReBindTel">
+                <em></em>
+                <input type="tel" oninput="OnInput(this)" placeholder="请输入手机号码">
+                <div class="reset" id="reset"><i class="iconfont icon-closefill"></i></div>
+            </div>
+        	
+            <div class="org-inputCode">
+            	<em></em>
+                <input type="tel" placeholder="请输入验证码">
+                <span>获取验证码</span>
+            </div>
+            
+        </div>
+        
+        <div class="org-qdModify">下一步</div>
+        
+        
+    </div>
+
+    
+</div>
+<script type="text/javascript" src="js/user.js"></script>
+</body>
+</html>

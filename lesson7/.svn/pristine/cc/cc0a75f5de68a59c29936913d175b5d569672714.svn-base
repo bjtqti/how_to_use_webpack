@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>选择支付方式</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/payment.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">选择支付方式</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="payment">
+    	<div class="info">
+            <span><i></i>订单已提交!</span>
+            <em>（请尽快完成支付）</em>
+            <div class="pay_amount">
+            	支付金额：
+                <em>&yen;588.00</em>
+            </div>
+        </div>
+        
+        <div class="pay_mode">
+        	<span class="title">选择支付方式</span>
+            <dl class="clearfix">
+            	<dt>
+                	<div class="checkboxRed" style="display:block;">
+                        <input type="radio" name="pay-amount" value="" checked="checked">
+                        <label></label>
+                    </div>
+                </dt>
+                <dd>
+                	<img src="images/pay_1.png" />
+                	<span>支付宝</span>	
+                    <em>支付宝支持大额订单支付</em>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt>
+                	<div class="checkboxRed" style="display:block;">
+                        <input type="radio" name="pay-amount" value="">
+                        <label></label>
+                    </div>
+                </dt>
+                <dd>
+                	<img src="images/pay_2.png" />
+                	<span>微信支付</span>	
+                    <em>单笔订单金额最高支持8000元</em>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+            	<dt>
+                	<div class="checkboxRed" style="display:block;">
+                        <input type="radio" name="pay-amount" value="">
+                        <label></label>
+                    </div>
+                </dt>
+                <dd>
+                	<img src="images/pay_3.png" />
+                	<span>银联支付</span>	
+                    <em>支持国内大部分银行在线支付</em>
+                </dd>
+            </dl>
+        </div>
+        
+    </div>
+    
+    <footer>
+    	<a href="javascript:void(0);" class="goodsSureBtn">立即支付</a>
+    </footer>
+    
+</div>
+
+<div class="fullscreen-mask" style="display: block;">
+    <div class="alert-wrap">
+    	<div class="alert-title">提示</div>
+        <div class="alert-con">
+            <p>是否放弃付款？</p>
+        </div>
+        <div class="alert-btn">
+        	<a href="javascript:void(0);">否</a>
+            <a href="javascript:void(0);">是</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/payment.js"></script>
+</body>
+</html>

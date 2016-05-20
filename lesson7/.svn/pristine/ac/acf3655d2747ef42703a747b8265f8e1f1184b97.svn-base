@@ -1,0 +1,551 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>类目聚合页</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/catePoly.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+    <!--header-->
+    <header>
+        <a class="logo" href="#">
+            <img src="images/indexlogo.png">
+        </a>
+        <a class="indexQrcode" href="#">
+            <i></i>
+        </a>
+        <a class="indexSearch" href="search.html">
+            <i></i>
+        </a>
+    </header>
+    
+    <div class="polyTabs">
+    	<ul>
+        	<li class="current"><i>类别</i></li>
+            <li><i>品牌</i></li>
+            <li><i>产地</i></li>
+        </ul>
+    </div>
+    
+    <div class="polyCon">
+    	<div id="page-content">
+        	<!-- 类别 -->
+        	<div class="poly_1 page-0 page-current">
+            	<div class="category-bd"></div>
+                
+                <ul class="leftNav">
+                	<li class="name on"><div class="bd-on">母婴用品</div></li>
+                    <li class="name"><div class="bd-on">美容彩妆</div></li>
+                    <li class="name"><div class="bd-on">营养保健</div></li>
+                    <li class="name"><div class="bd-on">家居洗护</div></li>
+                    <li class="name"><div class="bd-on">进口美食</div></li>
+                </ul>
+                
+            	<!--<div class="leftNav">
+                
+                	<div class="name on">
+                        <div class="bd-on shake"><div>母婴用品</div></div>
+                        <div class="bd"><div>母婴用品</div></div>
+                    </div>
+                    <div class="name">
+                        <div class="bd-on shake"><div>美容彩妆</div></div>
+                        <div class="bd"><div>美容彩妆</div></div>
+                    </div>
+                    <div class="name">
+                        <div class="bd-on shake"><div>营养保健</div></div>
+                        <div class="bd"><div>营养保健</div></div>
+                    </div>
+                    <div class="name">
+                        <div class="bd-on shake"><div>家居洗护</div></div>
+                        <div class="bd"><div>家居洗护</div></div>
+                    </div>
+                    <div class="name">
+                        <div class="bd-on shake"><div>进口美食</div></div>
+                        <div class="bd"><div>进口美食</div></div>
+                    </div>
+
+                </div>-->
+                
+                <div class="rightCon">
+                	<div class="sh fadeIn">
+                    	<a href="#" class="ad">
+                       		<img src="images/pic24.gif">
+                        </a>
+                        <div class="content">
+                            <div class="title">热门分类</div>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                    	</div>
+                    </div>
+                    <div class="fadeIn">
+                    	<a href="#" class="ad">
+                       		<img src="images/pic24.gif">
+                        </a>
+                        <div class="content">
+                            <div class="title">热门分类</div>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                    	</div>
+                    </div>
+                    <div class="fadeIn">
+                    	<a href="#" class="ad">
+                       		<img src="images/pic24.gif">
+                        </a>
+                        <div class="content">
+                            <div class="title">热门分类</div>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                    	</div>
+                    </div>
+                    <div class="fadeIn">
+                    	<a href="#" class="ad">
+                       		<img src="images/pic24.gif">
+                        </a>
+                        <div class="content">
+                            <div class="title">热门分类</div>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                    	</div>
+                    </div>
+                    <div class="fadeIn">
+                    	<a href="#" class="ad">
+                       		<img src="images/pic24.gif">
+                        </a>
+                        <div class="content">
+                            <div class="title">热门分类</div>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=173" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>母婴直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=174" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>美妆直邮</div>
+                            </a>
+                            <a href="subcategory.php?id=162&amp;cid=175" class="cg">
+                                <img src="images/965_G_1445533723842.gif">
+                                <div>保健直邮</div>
+                            </a>
+                    	</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- 类别 end -->
+            
+            <!-- 品牌 -->
+            <div class="poly_2 page-1 hide">
+            	<a href="allBrand.html" class="allBrand">全部品牌<i class="iconfont icon-right"></i></a>
+                <div class="title">推荐品牌</div>
+              	<div class="brandList clearfix">
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                </div>
+                <div class="title">母婴用品</div>
+              	<div class="brandList clearfix">
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                </div>
+                <div class="title">母婴用品</div>
+              	<div class="brandList clearfix">
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                    <a href="#"><div><img src="images/pic25.gif"></div></a>
+                </div>
+            </div>
+            <!-- 品牌 end -->
+            
+            <!-- 产地 -->
+            <div class="poly_3 page-2 hide">
+            	<div class="kindArea">
+                	<a href="#"><img src="images/area_usa.gif"></a>
+                    <a href="#"><img src="images/area_korea.gif"></a>
+                    <a href="#"><img src="images/area_japan.gif"></a>
+                </div>
+            </div>
+            <!-- 产地 end -->
+        </div>
+    </div>
+    
+    
+    
+    <!--bottomNav-->
+    <nav class="bottomNav">
+        <ul class="clearfix">
+            <li><a href="#"><i></i>海外购</a></li>
+            <li><a href="#" class="nav_hover"><i></i>分类</a></li>
+            <li><a href="#"><i></i>爆款</a></li>
+            <li><a href="#"><i></i>购物车</a></li>
+            <li><a href="#"><i></i>个人中心</a></li>
+        </ul>
+    </nav>
+    
+</div>
+<script type="text/javascript" src="js/catePoly.js"></script>
+</body>
+</html>

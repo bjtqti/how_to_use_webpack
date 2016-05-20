@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>订单详情</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/orderDetail.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box box-pb">
+	<!--header-->
+    <header>
+        <span class="title">订单详情</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="orderSpeed">
+   	  <div class="orderNum">订单编号:<span>73499176895976</span></div>
+        <div class="rate">
+        	<img src="images/orderRate_03.gif" />
+            <div class="rateText">
+            	<span>待付款</span>
+                <span>待发货</span>
+                <span>待收货</span>
+                <span class="notTo">已完成</span>
+            </div>
+        </div>
+  </div>
+    
+    <div class="order-time">
+        <p>李某某<span class="mobNum">18692837719</span></p>
+        <p class="fs12px">湖南省 长沙市 芙蓉区 五一大道158号人瑞潇湘国际1928</p>
+    </div>
+    
+    <div class="order-list">
+        <div class="order-info"> <span>广州保税区一号仓</span></div>
+        
+        <div class="orderConfirm_l clearfix">
+        	<div class="orderConfirm_l_box">
+        		<div class="J_moveRight">
+        			<div class="clearfix">
+                    	<a class="img_wrap J_ytag cartlist" href="goods.php?id=685">
+                    		<img width="100%" src="http://youahaitao.oss-cn-hangzhou.aliyuncs.com/images/201508/thumb_img/685_thumb_G_1438565420829.jpg">
+                    	</a>
+        				<div class="gd_info">
+        					<p class="name"><span>KAO花王 蒸汽加热式眼罩 14片玫瑰香型 遮光安神缓解眼疲劳</span></p>
+        					<p class="value"> <span>&yen;308.00</span><b>X1</b></p>
+        				</div>
+        			</div>
+        			<div class="clearfix">
+                        <a class="img_wrap J_ytag cartlist" href="goods.php?id=878">
+                            <img width="100%" src="http://youahaitao.oss-cn-hangzhou.aliyuncs.com/images/201507/thumb_img/878_thumb_G_1438295153599.jpg">
+                        </a>
+                        <div class="gd_info">
+                            <p class="name"><span>KAO花王 蒸汽加热式眼罩 14片玫瑰香型 遮光安神缓解眼疲劳</span></p>
+                            <p class="value"> <span>&yen;448.00</span><b>X1</b></p>
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+
+    	</div>
+    </div>
+    
+    <div class="count-box">
+        <div class="title">
+            <div class="fl title-txt">结算</div>
+        </div>
+        <div class="bottom-line">
+            <div class="label">商品总价：</div>
+            <div class="data">&yen;<span>448.00</span> </div>
+        </div>
+        <div class=" bottom-line">
+            <div class="label">国内运费：</div>
+            <div class="red-box"> 包邮 </div>
+            <div class="data">&yen;<span>0.00</span> </div>
+        </div>
+        <div class=" bottom-line">
+            <div class="label">国际运费：</div>
+            <div class="data">&yen;<span>65.00</span> </div>
+        </div>
+        <div class="bottom-line">
+            <div class="label">关税：</div>
+            <div class="red-box">免税</div>
+            <div class="data">&yen;<span>0.00</span> </div>
+        </div>
+        <div class="bottom-line intro">
+            <div class="label">优惠活动：</div>
+            <div class="data">-&yen;<span>20.00</span> </div>
+        </div>
+        <div class="bottom-line intro">
+            <div class="label">优惠券：</div>
+            <div class="data">-&yen;<span id="coupon_money">5.00</span> </div>
+        </div>
+        <div class=" bottom-line no-border">
+            <div class="label">已付金额：</div>
+            <div class="data red-w">&yen;<span id="total_amount_money">308.00</span> </div>
+        </div>
+    </div>
+    
+    <div class="confirmBtns">
+    	<a href="javascript:void(0);" class="confirm_btn confirmBorder_btn">查看物流</a>
+    	<a href="javascript:void(0);" class="confirm_btn">确认收货</a>
+    </div>
+    
+</div>
+<script type="text/javascript" src="js/orderDetail.js"></script>
+</body>
+</html>

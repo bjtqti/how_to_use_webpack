@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>常见问题</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/faq.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">常见问题</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="faq">
+    	<div>1.如何注册成为会员？</div>
+        <p>进入个人中心-点击立即注册输入相关信息提交即可注册，目前仅支持手机注册，或友阿实体会员卡首次登陆注册。</p>
+        
+        <div>2.注册失败？</div>
+        <p>可能是网络问题或输入信息有误，建议确保网络畅通情况下，关闭后再重新进入尝试操作，或及时咨询客服。</p>
+        
+        <div>3.手机号码注册不了新账户？</div>
+        <p>目前手机号码注册特品汇账号时会同时进行绑定手机验证，即用户注册的手机号码必须接收验证码，同时该手机号码必须没有绑定过特品汇账号才能注册成功。如您的手机号码已与其他账号绑定，则无法注册新账户，如需注册，建议使用其他号码即可，或是用该手机找回密码登陆原注册账号即可。造成不便，敬请谅解！</p>
+        
+        <div>4.忘记登陆密码？</div>
+        <p>您可进入个人中心，点击登陆界面右下角“忘记密码”，根据提示找回密码。</p>
+    </div>
+</div>
+</body>
+</html>

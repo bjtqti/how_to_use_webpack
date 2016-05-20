@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>商品评论</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/comment.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/score.js"></script>
+</head>
+
+<body>
+<div id="load-box"></div>
+<div class="box">
+	<!--header-->
+    <header>
+        <span class="title">商品评论</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="commentTabs">
+    	<ul>
+        	<li class="current">全部评论</li>
+            <li>晒单</li>
+        </ul>
+    </div>
+    
+    <div class="commentCon">
+    	<div id="page-content">
+        	<div class="c_1 page-0 page-current">
+        		<!-- 商品详情-商品评论不为空 -->
+            	<div class="comList">
+                	<div class="comList_title">
+                    	<img src="images/picFace.png" />
+                        <span>A**n</span>
+                        <em>2015-05-26 14:36:12</em>
+                    </div>
+                    
+                    <div class="star">
+                    	<ul>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                        </ul>
+                    </div>
+                    <p>东西很好很不错！！~东西很好很不错！！~东西很好很不错！！~东西很好很不错！！！！！！~~~~~</p>
+                    
+                    <div class="comPics clearfix">
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                    </div>
+                    
+                </div>
+                
+                <div class="comList">
+                	<div class="comList_title">
+                    	<img src="images/picFace.png" />
+                        <span>A**n</span>
+                        <em>2015-05-26 14:36:12</em>
+                    </div>
+                    
+                    <div class="star">
+                    	<ul>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                        </ul>
+                    </div>
+                    <p>东西很好很不错！！~东西很好很不错！！~东西很好很不错！！~东西很好很不错！！！！！！~~~~~</p>
+                    
+                    <div class="comPics clearfix">
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                    </div>
+                    
+                </div>
+                
+                <div class="comList">
+                	<div class="comList_title">
+                    	<img src="images/picFace.png" />
+                        <span>A**n</span>
+                        <em>2015-05-26 14:36:12</em>
+                    </div>
+                    
+                    <div class="star">
+                    	<ul>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-34wujiaoxingpingfenshixin"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                            <li class="iconfont icon-35wujiaoxingpingfenkongxin2"></li>
+                        </ul>
+                    </div>
+                    <p>东西很好很不错！！~东西很好很不错！！~东西很好很不错！！~东西很好很不错！！！！！！~~~~~</p>
+                    
+                    <div class="comPics clearfix">
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                        <a href="javascript:void(0);"><img src="images/965_G_1445533723842.gif" /></a>
+                    </div>
+                    
+                </div>
+				
+                <!-- 商品详情-商品评论空 -->
+                <div class="empty" style="display:none;">
+                    <img src="images/empty_goodsComment.png" />
+                    <span>目前还没有任何评论哟~</span>
+                </div>
+            </div>
+            
+            <div class="c_2 page-1 hide">
+            	
+            	<!-- 商品详情-晒单空 -->
+                <div class="empty">
+                    <img src="images/empty_goodsSun.png" />
+                    <span>目前还没有任何晒单哟~</span>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<script type="text/javascript" src="js/comment.js"></script>
+</body>
+</html>

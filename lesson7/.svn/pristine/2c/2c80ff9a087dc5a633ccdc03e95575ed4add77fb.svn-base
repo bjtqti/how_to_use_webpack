@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="format-detection" content="telephone=no">
+<title>个人中心-设置</title>
+<script type="text/javascript" src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/user.css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body bgcolor="#f7f7f7">
+<div id="load-box"></div>
+<div class="box">
+
+	<!--header-->
+    <header>
+        <span class="title">设置</span>
+        <a href="javascript:void(0);" class="backArrow"></a>
+    </header>
+    
+    <div class="setup">
+        <div class="helpList">
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>清除图片缓存</dt>
+                    <dd>
+                        <span>35M</span>
+                        <i class="iconfont icon-right"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>2G/3G网络显示原图</dt>
+                    <dd>
+                        <i class="flexBtn"></i>
+                    </dd>
+                </dl>
+            </a>
+            <a href="javascript:void(0);">
+                <dl>
+                    <dt>版本</dt>
+                    <dd>5.6.0</dd>
+                </dl>
+            </a>
+        </div>
+        
+        <div class="otherPlat">
+        	<span>友阿旗下精品应用推荐</span>
+            <div class="platList clearfix">
+            	<a href="#">
+                	<img src="images/tepin.gif" />
+                    <span>友阿特品汇</span>
+                </a>
+                <a href="#">
+                	<img src="images/hnmall.gif" />
+                    <span>友阿农博汇</span>
+                </a>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="logOut">退出登录</a>
+    </div>
+    
+</div>
+<script type="text/javascript" src="js/user.js"></script>
+</body>
+</html>
