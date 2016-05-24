@@ -7,8 +7,8 @@ var cssnext = require('cssnext');
 var precss = require('precss');
 var reload = browserSync.reload;
 
-//var info = autoprefixer({ browsers: ['last 3 version'] }).info();
-//console.log(info);
+var info = autoprefixer({ browsers: ['last 5 version'] }).info();
+console.log(info);
 
 var config = {
 	style : ['./css/search.css']
@@ -18,7 +18,7 @@ gulp.task('css',function(){
 	var processors = [
 		precss,
 		cssnext,
-		autoprefixer({browsers:['last 2 versions']})
+		autoprefixer({browsers:['last 3 versions']})
 	];
 	return gulp.src(config.style)
 		//.pipe(watch(config.style))
