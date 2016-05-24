@@ -7,10 +7,17 @@
 	align-items:center;
 }
 
+.left-box {
+	display: -webkit-box;
+}
+.right-box {
+	text-align: center;
+}
 .left-box,
 .right-box {
 	width: 1.15rem;
 	height: 1.15rem;
+	line-height: 1.15rem;
 }
 .search-box {
 	flex-grow: 1;
@@ -26,13 +33,14 @@
 		padding: 0;
 	}
 }
-
+ 
 .back-icon{
-	width: .58667rem;
+	display: block;
+	width: .6rem;
 	height: .6rem;
 	background: url(../images/backArrow.png) no-repeat center center;
 	background-size: cover;
-	margin: .26rem auto;
+	margin: .3rem auto;
 }
 
 .right-box {
@@ -141,10 +149,13 @@
 
 .goods-price {
 	display: flex;
+	display: -webkit-box;
 	height: .6rem;
 	align-items: center;
 	& > span{
+		display: block;
 		flex-grow: 1;
+		-webkit-box-flex: 1;
 		line-height: .6rem;
 	}
 }

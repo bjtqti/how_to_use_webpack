@@ -11,9 +11,16 @@
 	        align-items:center;
 }
 
+.left-box {
+	display: -webkit-box;
+}
+.right-box {
+	text-align: center;
+}
 .left-box, .right-box {
 	width: 1.15rem;
 	height: 1.15rem;
+	line-height: 1.15rem;
 }
 .search-box {
 	-webkit-flex-grow: 1;
@@ -31,13 +38,14 @@
 	text-indent: .8rem;
 	padding: 0;
 }
-
+ 
 .back-icon{
-	width: .58667rem;
+	display: block;
+	width: .6rem;
 	height: .6rem;
 	background: url(../images/backArrow.png) no-repeat center center;
 	background-size: cover;
-	margin: .26rem auto;
+	margin: .3rem auto;
 }
 
 .right-box {
@@ -159,6 +167,7 @@
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	display: -webkit-box;
 	height: .6rem;
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
@@ -166,9 +175,11 @@
 }
 
 .goods-price > span {
+	display: block;
 	-webkit-flex-grow: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
+	-webkit-box-flex: 1;
 	line-height: .6rem;
 }
  
