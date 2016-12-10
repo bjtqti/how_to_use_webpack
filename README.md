@@ -1,7 +1,6 @@
-[![Join the chat at https://gitter.im/reactjs-cn/react-docs](https://badges.gitter.im/Join%20Chat.svg)](http://webpack.github.io/docs/)
-webpack官方文档
+ 
 
-# 如何使用webpack构建前端打包方案 
+# Webpack学习参考书
 	
 	从零开始，一步一步地介绍webpack的使用，最终实现利用webpack构建一个自动化的打包方案
 
