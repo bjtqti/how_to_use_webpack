@@ -2,73 +2,92 @@
 
 # Webpack学习参考书
 	
-	从零开始，一步一步地介绍webpack的使用，最终实现利用webpack构建一个自动化的打包方案
+### Webpack是个什么东东
+	Webpack是由Tobias Koppers开发的一个开源前端模块构建工具。它的基本功能是将以模块格式书写的多个JavaScript文件打包成一个文件，同时支持CommonJS和AMD格式。但让它与众不同的是，它提供了强大的loader API来定义对不同文件格式的预处理逻辑，从而让我们可以将CSS、模板，甚至是自定义的文件格式当做JavaScript模块来使用。Webpack 基于loader还可以实现大量高级功能，比如自动分块打包并按需加载、对图片资源引用的自动定位、根据图片大小决定是否用base64内联、开发时的模块热替换等等，可以说是目前前端构建领域最有竞争力的解决方案之一。
 
-### 自动安装
+### 怎么使用
+
+* 首先安装Webpack
 
 ```sh
-	cd lesson1
-	$ npm install
+  $ npm i -g webpack webpack
 ```
-### 手动安装
+或者
 
 ```sh
-	$ mkdir webapp
-	$ npm init
-	$ npm install webpack babel-core babel-loader babel-preset-es2015 --save-dev
-	$ npm install react react-dom --save
-	$ touch webpack.config.js
-``` 
-
-### 依赖
-	
-	需要安装nodejs 4.4.4+ 版本
-	npm 3.0+
-	推荐在Mac OS X 或 ubuntu  等环境下使用how_to_use_webpack 下的所有示例
-
-> 注意:
->
-> Windows下未经测试，npm install 部分包可能会因缺少组件而报错。比如sass需要自行安装phyton2.7，c++
-
-### 提示信息
-
-*  npm init 初始化一个项目，自动创建package.json文件，中间会有一些提示信息需要确认，默认回车就行。[文档](https://docs.npmjs.com/files/package.json)
-*  --save 或 --save-dev 用来把install的包名保存在package.json文件中，以后只要npm install 就可以了。
-   --save 和 --save-dev 是有区别的，从它们在package.json文件中的位置就大概可以猜出来了。简单来说，如果只是用来辅助打包用的包，就用--save-dev
-   否则就用--save
-*  webpack.config.js 文件是webpack的默认配置文件，放在项目的根目录，也就是与package.json同级。当然，这个路径和名字，也是可以更改的，不过需要
-	用webpack --config xxx 的方式进行指定，后面章节会有示例，这一章了解一下就好。
-*  npm 安装有些包会很慢，可以参考淘宝的npm镜像 [淘宝加速](https://npm.taobao.org/)
-*  最后打开package.json文件，在scripts：后面加上"start":"webpack",这样就可以用npm run start 方式启动打包过程了。start这是任务的名字，可以
-	用自己喜欢的，比如build,release等等，但是后面的webpack则是固定用法。更多用法参考[npm-scripts](https://docs.npmjs.com/misc/scripts)
-
-
-### 启动
-
-使用了webpack-dev-server 的情况下（默认地址是`http://localhost:4000`）：
-否则直接访问对应目录下的index.html文件
-
-```sh
-$ npm run start
+  $ npm install webpack webpack
 ```
-### 文档目录
+这里加上-g 是表示全局安装，可以直接在终端输入webpack命令运行，不加-g则安装在当前目录下，两种安装方式各有优点：全局安装的好处是一次安装，到处可以用。局部安装的好处是程序调用快一点点。推荐全局安装，这样方便我们练习。
 
-* [打包js](/lesson1)
-* [打包css](/lesson2)
-* [打包css到文件](/lesson3)
-* [打包jsx和es6文件](/lesson4)
-* [演示热替换](/lesson5)
-* [打包成压缩文件](/lesson6)
-* [Gulp实例演示](/lesson7)
+### 目录
+
+1. [入口文件](#demo01-entry-file-source)
+1. [Multiple entry files](#demo02-multiple-entry-files-source)
+1. [Babel-loader](#demo03-babel-loader-source)
+1. [CSS-loader](#demo04-css-loader-source)
+1. [Image loader](#demo05-image-loader-source)
+1. [CSS Module](#demo06-css-module-source)
+1. [UglifyJs Plugin](#demo07-uglifyjs-plugin-source)
+1. [HTML Webpack Plugin and Open Browser Webpack Plugin](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
+1. [Environment flags](#demo09-environment-flags-source)
+1. [Code splitting](#demo10-code-splitting-source)
+1. [Code splitting with bundle-loader](#demo11-code-splitting-with-bundle-loader-source)
+1. [Common chunk](#demo12-common-chunk-source)
+1. [Vendor chunk](#demo13-vendor-chunk-source)
+1. [Exposing Global Variables](#demo14-exposing-global-variables-source)
+1. [Hot Module Replacement](#demo15-hot-module-replacement-source)
+1. [React router](#demo16-react-router-source)
+
+## Demo01: 入口文件 ([source](https://github.com/bjtqti/how_to_use_webpack/tree/master/demo01))
+
+Entry file is a file which Webpack will read to build bundle.js.
+
+For example, `main.js` is an entry file.
+
+```javascript
+// main.js
+document.write('<h1>Hello World</h1>');
+```
+
+index.html
+
+```html
+<html>
+  <body>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
+```
+
+Webpack follows `webpack.config.js` to build `bundle.js`.
+
+```javascript
+// webpack.config.js
+module.exports = {
+  entry: './main.js',
+  output: {
+    filename: 'bundle.js'
+  }
+};
+```
+
+Launch the server, visit http://127.0.0.1:8080 .
+
+```bash
+$ webpack-dev-server
+```
+
 
 ### 参考
 
-* [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
-* [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
-    - [解读Webpack官方文档](https://segmentfault.com/a/1190000003506497)
-    - [npm-scripts](http://blog.csdn.net/ricohzhanglong/article/details/50726256)
-* [WEBPACK 入门](http://www.jianshu.com/p/cc1e6f2d6380)
-* [使用 Babel + React + Webpack 搭建 Web 应用](http://www.tuicool.com/articles/yU73qay)
+1. [官方文档](http://webpack.github.io/)
+1. [WebPack 简明学习教程](http://www.jianshu.com/p/b95bbcfc590d)
+1. [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
+1. [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
+    1.1 [解读Webpack官方文档](https://segmentfault.com/a/1190000003506497)
+    1.1 [npm-scripts](http://blog.csdn.net/ricohzhanglong/article/details/50726256)
+1. [WEBPACK 入门](http://www.jianshu.com/p/cc1e6f2d6380)
+1. [使用 Babel + React + Webpack 搭建 Web 应用](http://www.tuicool.com/articles/yU73qay)
 
 ### Blog
 
