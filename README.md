@@ -26,7 +26,7 @@
 
 ### 目录
 
-1. [入口文件](#demo01-entry-file-source)
+1. [Entry file](#demo01-entry-file-source)
 1. [Multiple entry files](#demo02-multiple-entry-files-source)
 1. [Babel-loader](#demo03-babel-loader-source)
 1. [CSS-loader](#demo04-css-loader-source)
@@ -43,7 +43,7 @@
 1. [Hot Module Replacement](#demo15-hot-module-replacement-source)
 1. [React router](#demo16-react-router-source)
 
-## Demo01: 入口文件 ([source](https://github.com/bjtqti/how_to_use_webpack/tree/master/demo01))
+## Demo01: Entry file ([source](https://github.com/bjtqti/how_to_use_webpack/tree/master/demo01))
 
 Entry file is a file which Webpack will read to build bundle.js.
 
