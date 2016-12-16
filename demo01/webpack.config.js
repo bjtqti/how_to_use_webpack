@@ -1,7 +1,12 @@
+//最简单的webpack配置
 
-module.exports = {
-    entry: './main.js', //入口文件,webpack会从入口文件出开始查找依赖递归进行打包
+var config = {
+    entry: './main.js', //入口文件地址
     output: {
         filename: 'bundle.js',　　//打包后的文件名
     }
 };
+ 
+
+
+module.exports = config;
