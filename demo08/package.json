@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "html-webpack-plugin": "^2.24.1",
+    "open-browser-webpack-plugin": "^0.0.3",
+    "webpack": "^1.14.0"
+  }
+}

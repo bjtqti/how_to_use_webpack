@@ -1,0 +1,9 @@
+{
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "set DEBUG=false && webpack"
+	},
+	"devDependencies": {
+		"webpack": "^1.14.0"
+	}
+}
