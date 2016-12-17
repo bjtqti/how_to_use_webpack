@@ -1,56 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
-
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import App from './compoents/app.jsx';
+import Inbox from './compoents/inbox.jsx';
+import Dashboard from './compoents/dashboard.jsx';
+import Calendar from './compoents/calendar.jsx';
 require('./app.css');
-
-var App = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <header>
-          <ul>
-            <li><Link to="/app">Dashboard</Link></li>
-            <li><Link to="/inbox">Inbox</Link></li>
-            <li><Link to="/calendar">Calendar</Link></li>
-          </ul>
-          Logged in as Jane
-        </header>
-        {this.props.children}
-      </div>
-    );
-  }
-});
-
-var Dashboard = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <p>Dashboard</p>
-      </div>
-    );
-  }
-});
-
-var Inbox = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <p>Inbox</p>
-      </div>
-    );
-  }
-});
-
-var Calendar = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <p>Calendar</p>
-      </div>
-    );
-  }
-});
 
 render((
   <Router history={browserHistory}>
