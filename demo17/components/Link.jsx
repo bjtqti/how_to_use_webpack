@@ -1,23 +1,33 @@
-import React, { PropTypes } from 'react'
+'use strict';
 
-const Link = ({ active, children, onClick }) => {
-  if (active) {
-    return <span>{children}</span>
+import React, { Component , PropTypes} from 'react';
+import { fetchData } from '../actions/action'
+
+class Link extends Component{
+
+  handleClick(){
+    fetchData(333)
   }
 
-  return (
-    <a href="#"
-       onClick={e => {
-         e.preventDefault()
-         onClick()
-       }}
-    >
-      {children}
-    </a>
-  )
-}
+  render(){
+    if (this.props.active) {
+      return <span>{this.props.children}</span>
+    }
 
-Link.propTypes = {
+    return (
+      <a href="#"
+         onClick={e => {
+           e.preventDefault()
+           this.handleClick()
+         }}
+      >
+        {this.props.children}
+      </a>
+    )
+  }
+}
+ 
+Link.defaultProps = {
   active: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func.isRequired
