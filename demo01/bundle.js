@@ -42,9 +42,32 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(1);
+	__webpack_require__(2);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"./dist/bundle.js\""); }());
+
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
 	document.write('Hello World');
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var cats = __webpack_require__(3);
+	console.log(cats);
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	var cats = ['dave','henry','martha','goods'];
+	module.exports=cats;
 
 /***/ }
 /******/ ]);
