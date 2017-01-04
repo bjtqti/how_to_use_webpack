@@ -12,7 +12,5 @@
   ],
   "author": "frog",
   "license": "MIT",
-  "devDependencies": {
-    "webpack": "^1.13.0"
-  }
+  "devDependencies": {}
 }
