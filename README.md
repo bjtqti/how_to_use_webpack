@@ -86,6 +86,7 @@ $ webpack-dev-server
 ### 参考
 
 1. [官方文档](http://webpack.github.io/)
+2. [源码fork](https://github.com/ruanyf/webpack-demos)
 1. [WebPack 简明学习教程](http://www.jianshu.com/p/b95bbcfc590d)
 1. [一小时包教会 —— webpack 入门指南](http://www.w2bc.com/Article/50764)
 1. [轻松入门React和Webpack](https://segmentfault.com/a/1190000002767365)
