@@ -1,0 +1,14 @@
+body {
+    background: white;
+    font-size: 100%;
+}
+
+h3 {
+	text-align: center;
+}
+
+footer {
+	margin-top: 1rem;
+	text-align: center;
+	color:red;
+}
