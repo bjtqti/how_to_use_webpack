@@ -4,13 +4,13 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
  
 module.exports = {
 	entry:{
-		app:['./src/app.es6']
+		app:['./src/app.jsx','./src/app.css']
 	},
 	module: {
     	loaders: [{
-		    test: /\.es6$/,
+		    test: /\.es6|jsx$/,
 		    exclude: /node_modules/,
-		    loader: 'babel-loader',
+		    loader: 'react-hot!babel-loader',
 	    },
 	    {
 	    	test:/\.css$/,
@@ -22,6 +22,9 @@ module.exports = {
 		publicPath:'/assets/',
     	filename: 'bundle.js'
  	},
+ 	resolve: {
+    	extensions: ['', '.js','.es6','.jsx']
+    },
  	plugins: [
  		new ExtractTextPlugin('bundle.css'),
         // new webpack.DefinePlugin({

@@ -7,17 +7,17 @@ module.exports = {
 	entry:[
 	 	//'webpack-dev-server/client?http://localhost:8081',//资源服务器地址
     	//'webpack/hot/dev-server',
-		'./src/app.es6'
+		'./src/app.jsx','./src/app.css'
 	],
 	module: {
     	loaders: [{
-		    test: /\.es6$/,
+		    test: /\.es6|jsx$/,
 		    exclude: [node_modules_dir],
-		    loaders: ['babel-loader'],
+		    loaders: ['react-hot','babel-loader'],
 	    },
 	    {
 	    	test:/\.css$/,
-	    	loader:ExtractTextPlugin.extract('style', 'css')
+	    	loaders:['style', 'css']
 	    }]
   	},
 	output: {
@@ -26,10 +26,9 @@ module.exports = {
     	filename: 'bundle.js'
  	},
  	resolve: {
-    	extensions: ['', '.js','.es6']
+    	extensions: ['', '.js','.es6','.jsx']
     },
  	plugins: [
- 		new ExtractTextPlugin('bundle.css'),
  		new webpack.DefinePlugin({
 		    'process.env.NODE_ENV': '"development"'
 		}),
