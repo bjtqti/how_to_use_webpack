@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
  
+require('./hello.css');
 
 export default class Hello extends Component {
   render() {
