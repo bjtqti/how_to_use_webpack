@@ -1,10 +1,9 @@
-// if(module.hot){
-//     module.hot.accept();
-//     console.log(333)
-// }
-
-    require('./app.css');
-
+if(module.hot){
+	// module.hot.accept(function(err){
+	// 	console.log(err)
+	// })
+}
+require('./app.css');
 
 function bootstart(){
 	var app = document.querySelector('#app');
