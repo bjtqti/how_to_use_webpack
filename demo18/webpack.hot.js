@@ -1,11 +1,13 @@
 var path = require("path");
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-console.log(process.env.NODE_ENV)
+ 
 module.exports = {
-	entry:{
-		app:['./src/app.es6']
-	},
+	entry:[
+	 	'webpack-dev-server/client?http://127.0.0.1:8090',//资源服务器地址
+    	'webpack/hot/dev-server',
+		'./src/app.es6'
+	],
 	module: {
     	loaders: [{
 		    test: /\.es6$/,
@@ -17,15 +19,17 @@ module.exports = {
 	    	loader:ExtractTextPlugin.extract('style', 'css')
 	    }]
   	},
+  	watch:true,
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		publicPath:'/assets/',
+		publicPath:'http://127.0.0.1:8090/assets/',
     	filename: 'bundle.js'
  	},
  	plugins: [
  		new ExtractTextPlugin('bundle.css'),
-        // new webpack.DefinePlugin({
-        //     'process.env.NODE_ENV': '"production"'
-        // }),
+ 		new webpack.DefinePlugin({
+		    'process.env.NODE_ENV': '"development"'
+		}),
+		new webpack.HotModuleReplacementPlugin()
     ]
 }

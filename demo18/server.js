@@ -1,15 +1,26 @@
+'use strict'
 var webpack = require('webpack');
-var webpackDevServer = require('webpack-dev-server');
-var config = require("./webpack.config.js");
-config.entry.app.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
-config.plugins.push(new webpack.HotModuleReplacementPlugin())
+var WebpackDevServer = require('webpack-dev-server');
+var config = require('./webpack.hot.js');
+var env = {
+	hmrPort : 8090,
+	lanIP:'127.0.0.1'
+}
 
-var compiler = webpack(config);
-var server = new webpackDevServer(compiler, {
+new WebpackDevServer(webpack(config), {
+  publicPath: config.output.publicPath,
   hot: true,
+  noInfo:true,
   inline:true,
-  noInfo:true
-});
-server.listen(8080,'0.0.0.0',function(err,std){
-	console.log(err,std)
+  //contentBase:"http://localhost:3000/",
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
+  historyApiFallback: true
+}).listen(env.hmrPort, env.lanIP, function (err, result) {
+  if (err) {
+    console.log(err);
+  }
+  console.log('🌎 hmr-server Listening at %s:%d',env.lanIP,env.hmrPort);
 });

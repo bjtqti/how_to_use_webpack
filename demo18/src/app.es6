@@ -1,14 +1,22 @@
-require('./app.css');
+// if(module.hot){
+//     module.hot.accept();
+//     console.log(333)
+// }
 
-window.onload=function(){
+    require('./app.css');
+
+
+function bootstart(){
 	var app = document.querySelector('#app');
 	var date = Date.now();
 	app.innerHTML = `
-		<h3> hello app hot .1</h3>
+		<h3> hello app hot ...</h3>
 		<footer>&copy;${date}</footer>
 	`
 }
 
+window.addEventListener('DOMContentLoaded',bootstart,false);
+ 
 module.exports = {
-
+	bootstart
 }
