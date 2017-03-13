@@ -31,5 +31,9 @@
     "webpack": "~1.13.0",
     "webpack-dev-server": "^1.14.0"
   },
-  "repository": "ruanyf/webpack-demos"
+  "repository": "ruanyf/webpack-demos",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "webpack": "^2.2.1"
+  }
 }

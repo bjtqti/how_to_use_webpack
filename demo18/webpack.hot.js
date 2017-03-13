@@ -1,6 +1,6 @@
 var path = require("path");
 var webpack = require('webpack');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+//var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var node_modules_dir = path.resolve(__dirname, 'node_modules');
  
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
  		new webpack.DefinePlugin({
 		    'process.env.NODE_ENV': '"development"'
 		}),
-		new webpack.HotModuleReplacementPlugin(),
+		//new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()
     ]
 }

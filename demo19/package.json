@@ -1,0 +1,21 @@
+{
+  "name": "demo19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "build:dist": "webpack --env=prod --progress --profile --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack-merge": "^4.0.0"
+  }
+}
